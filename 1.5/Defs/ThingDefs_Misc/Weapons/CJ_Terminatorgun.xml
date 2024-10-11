@@ -1,0 +1,70 @@
+<Defs>
+    <ThingDef ParentName="BaseGun">
+        <defName>CJ_Terminatorgun</defName>
+        <label>Skynet-5A2</label>
+        <description>This heavy double barreled machine gun was designed by a dangerous rogue AI. Made to serve E-800 units specifically.</description>
+        <graphicData>
+            <texPath>Terminator/Weapons/CJTerminatorgun</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <tradeability>None</tradeability>
+        <destroyOnDrop>true</destroyOnDrop>
+        <relicChance>0</relicChance>
+        <smeltable>false</smeltable>
+        <soundInteract>Interact_Rifle</soundInteract>
+        <equippedDistanceOffset>-0.25</equippedDistanceOffset>
+        <statBases>
+            <WorkToMake>60000</WorkToMake>
+            <Mass>10</Mass>
+            <AccuracyTouch>0.45</AccuracyTouch>
+            <AccuracyShort>0.65</AccuracyShort>
+            <AccuracyMedium>0.65</AccuracyMedium>
+            <AccuracyLong>0.45</AccuracyLong>
+            <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponTags>
+            <li>CJTerminatorgun</li>
+        </weaponTags>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.25</MoveSpeed>
+        </equippedStatOffsets>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>CJ_Terminatorgun_Bullet</defaultProjectile>
+                <warmupTime>1.4</warmupTime>
+                <range>35.9</range>
+                <burstShotCount>8</burstShotCount>
+                <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+                <soundCast>Shot_Minigun</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
+                <muzzleFlashScale>12</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>barrels</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>17.7</power>
+                <cooldownTime>2.2</cooldownTime>
+            </li>
+        </tools>
+    </ThingDef>
+    
+    <ThingDef ParentName="BaseBullet">
+        <defName>CJ_Terminatorgun_Bullet</defName>
+        <label>terminator bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>15</damageAmountBase>
+            <speed>55</speed>
+        </projectile>
+    </ThingDef>
+</Defs>
