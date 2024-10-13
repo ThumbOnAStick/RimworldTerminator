@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-  <SitePartDef Name="UniqueMechSiteParent" Abstract="true">
+  
+</Defs> 
+  <!-- <SitePartDef Name="UniqueMechSiteParent" Abstract="true">
 
     <siteTexture>Bastion/Other/repairjunk_icon</siteTexture>
     <expandingIconTexture>Bastion/Other/repairjunk_icon</expandingIconTexture>
@@ -20,8 +22,7 @@
     </tags>
   </SitePartDef>
 
-  <!--Terminator-->
-  <SitePartDef ParentName="UniqueMechSiteParent">
+    <SitePartDef ParentName="UniqueMechSiteParent">
     <defName>Bastion_UniqueMechSiteTerminator</defName>
     <label>Unique mech site</label>
     <description>The location of the unique mech wreck is here.</description>
@@ -35,5 +36,7 @@
     <genStep Class="Bastion.Bastion_GenStep_SpawnWreck">
       <wreckDef>Bastion_AncientTerminatorJunk</wreckDef>
     </genStep>
-  </GenStepDef>
-</Defs>
+  </GenStepDef> 
+-->
+   
+ 

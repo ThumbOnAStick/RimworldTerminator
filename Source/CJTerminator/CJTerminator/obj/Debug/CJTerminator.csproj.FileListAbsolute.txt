@@ -1,0 +1,4 @@
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\CJ E-800\1.5\Assemblies\CJTerminator.dll
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\CJ E-800\Source\CJTerminator\CJTerminator\obj\Debug\CJTerminator.csproj.AssemblyReference.cache
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\CJ E-800\Source\CJTerminator\CJTerminator\obj\Debug\CJTerminator.csproj.CoreCompileInputs.cache
+D:\SteamLibrary\steamapps\common\RimWorld\Mods\CJ E-800\Source\CJTerminator\CJTerminator\obj\Debug\CJTerminator.dll

@@ -1,5 +1,5 @@
 <Defs>
-    <HediffDef>
+    <!-- <HediffDef>
         <defName>Bastion_Recovery</defName>
         <label>recovery mode</label>
         <description>E-54 has activated self repair; Damage sustained is being recovered.</description>
@@ -32,5 +32,5 @@
             </li>
         </comps>
         <isBad>false</isBad>
-    </HediffDef>
+    </HediffDef> -->
 </Defs>

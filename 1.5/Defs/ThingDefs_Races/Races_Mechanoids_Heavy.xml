@@ -30,7 +30,7 @@
       <body>Mech_CJTerminator</body>
       <baseBodySize>1.5</baseBodySize>
       <baseHealthScale>4.0</baseHealthScale>
-      <renderTree>Bastion</renderTree>
+      <renderTree>CJTerminator</renderTree>
       <lifeStageAges>
         <li>
           <def>MechanoidFullyFormed</def>
@@ -48,7 +48,7 @@
       </mechEnabledWorkTypes>
     </race>
     <comps>
-      <li Class="Bastion.SelfControlGroup_CompProperties" />
+      <!-- <li Class="Bastion.SelfControlGroup_CompProperties" /> -->
     </comps>
   </ThingDef>
 
@@ -76,9 +76,9 @@
         </bodyGraphicData>
       </li>
     </lifeStages>
-    <abilities>
+    <!-- <abilities>
       <li>Bastion_Recovery</li>
-    </abilities>
+    </abilities> -->
     <weaponTags>
       <li>CJTerminatorgun</li>
     </weaponTags>

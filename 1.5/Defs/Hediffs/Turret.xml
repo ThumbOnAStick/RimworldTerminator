@@ -1,5 +1,5 @@
 <Defs>
-  <HediffDef>
+  <!-- <HediffDef>
     <defName>Bastion_Turret</defName>
     <label>sentry mode</label>
     <description>E-54 has activated Siege Protocols. They are immobile in this form, but their armor and weaponry is enhanced.</description>
@@ -13,5 +13,5 @@
       </li>
     </stages>
     <isBad>false</isBad>
-  </HediffDef>
+  </HediffDef> -->
 </Defs>
