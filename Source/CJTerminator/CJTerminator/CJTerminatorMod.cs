@@ -13,7 +13,7 @@ namespace CJTerminator
         public CJTerminatorMod(ModContentPack content) : base(content)
         {
             Harmony harmony = new Harmony(content.PackageId);
-            harmony.PatchAll();
+            harmony.PatchAll()Log.Message("I wrote something here, look");;
         }
     }
 }
