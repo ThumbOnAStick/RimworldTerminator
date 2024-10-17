@@ -1,5 +1,5 @@
 <Defs>
-    <!-- <ThingDef ParentName="BaseGun">
+     <ThingDef ParentName="BaseGun">
         <defName>CJ_Terminatorgun</defName>
         <label>Skynet-5A2</label>
         <description>This heavy double barreled machine gun was designed by a dangerous rogue AI. Made to serve E-800 units specifically.</description>

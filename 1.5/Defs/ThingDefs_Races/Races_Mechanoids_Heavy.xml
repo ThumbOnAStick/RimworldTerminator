@@ -2,7 +2,7 @@
   <!--Terminator colony-->
   <ThingDef Name="Mech_CJTerminator" ParentName="HeavyMechanoid">
     <defName>Mech_CJTerminator</defName>
-    <label>E-800</label>
+    <label>T-800</label>
     <description>An ancient, AI designed armored android, originally constructed to infiltrate and exterminate humans.</description>
      <tools>
       <li>
@@ -53,7 +53,7 @@
   </ThingDef>
 
   <PawnKindDef Name="Mech_Terminator_BaseKind" ParentName="HeavyMechanoidKind" Abstract="true">
-    <label>E-800</label>
+    <label>T-800</label>
     <race>Mech_CJTerminator</race>
     <combatPower>250</combatPower>
     <weaponMoney>99999~99999</weaponMoney>
