@@ -14,7 +14,7 @@ namespace CJTerminator
         {
             Harmony harmony = new Harmony(content.PackageId);
             harmony.PatchAll();
-            Log.Message("I wrote something here, look");;
+            Log.Message("CJTerminator: Successfully initiated");
         }
     }
 }

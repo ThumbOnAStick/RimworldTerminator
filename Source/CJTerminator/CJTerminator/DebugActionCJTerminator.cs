@@ -7,6 +7,7 @@ using Verse;
 using RimWorld;
 using LudeonTK;
 using UnityEngine;
+using Verse.AI;
 
 namespace CJTerminator
 {
@@ -55,6 +56,15 @@ namespace CJTerminator
                 return;
             }
             Log.Message(CJTerminatorUtil.BodyPartHarmRatio(p,r));
+        }
+
+        [DebugAction("CJTerminator", null, false, false, false, false, 0, false, actionType = DebugActionType.ToolMapForPawns, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+        public static void EquipWeaponForTerminator(Pawn p)
+        {
+            Thing weapon = Find.CurrentMap.spawnedThings.First(x => x.def.IsWeapon);
+            Job job = JobMaker.MakeJob(JobDefOf.Equip, weapon);
+
+            p.jobs.TryTakeOrderedJob(job, new JobTag?(JobTag.Misc));
         }
 
 
