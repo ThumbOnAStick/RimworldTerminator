@@ -76,9 +76,9 @@
         </bodyGraphicData>
       </li>
     </lifeStages>
-    <!-- <abilities>
-      <li>Bastion_Recovery</li>
-    </abilities> -->
+    <abilities>
+      <li>RobotEquipWeapon</li>
+    </abilities>
     <weaponTags>
       <li>CJTerminatorgun</li>
     </weaponTags>
