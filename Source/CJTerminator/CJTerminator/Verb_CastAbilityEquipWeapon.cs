@@ -9,6 +9,8 @@ using UnityEngine;
 using UnityEngine.Assertions.Must;
 using Verse;
 using Verse.AI;
+using static RimWorld.PsychicRitualRoleDef;
+using static UnityEngine.GraphicsBuffer;
 
 namespace CJTerminator
 {
@@ -19,19 +21,33 @@ namespace CJTerminator
             return true;
         }
 
+        public override void OrderForceTarget(LocalTargetInfo target)
+        {
+            //CasterPawn.drafter.Drafted = false;
+            Job job = JobMaker.MakeJob(JobDefOf.Equip, currentWeapon);
+            CasterPawn.jobs.TryTakeOrderedJob(job, new JobTag?(JobTag.Misc));
+        }
+
         public override bool ValidateTarget(LocalTargetInfo target, bool showMessages = true)
         {
-            //bool newResult = false;
-            //if (target != null && target.HasThing && target.Thing.def.IsWeapon &&
-            //    ability.pawn.CanReach(target, PathEndMode.Touch, ability.pawn.NormalMaxDanger()))
-            //{
-            //    newResult = true;
-            //}
 
+            if (!target.Cell.InBounds(caster.Map))
+            {
+                return false;
+            }
+            List<Thing> l = target.Cell.GetThingList(caster.Map);
+            if (l.Count() < 1)
+            {
+                return false;
+            }
+            if (!l.Any(x => x.def.IsWeapon))
+            {
+                return false;
+            }
+            Thing weapon = l.First(x => x.def.IsWeapon);
+            currentWeapon = weapon;
+            return true;
 
-            return target != null && target.Cell.TryGetFirstThing(map;
-           //     && target.HasThing && target.Thing.def.IsWeapon &&
-           //this.CasterPawn.CanReach(target, PathEndMode.Touch, this.CasterPawn.NormalMaxDanger());
         }
 
 
@@ -63,9 +79,7 @@ namespace CJTerminator
             GenUI.DrawMouseAttachment(TexCommand.CannotShoot);
         }
 
-
-
-        private float cachedEffectiveRange = -1f;
+        private Thing currentWeapon;
 
     }
 

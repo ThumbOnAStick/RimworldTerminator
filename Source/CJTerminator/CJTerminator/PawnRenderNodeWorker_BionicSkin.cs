@@ -11,17 +11,20 @@ namespace CJTerminator
 {
     public class PawnRenderNodeWorker_BionicSkin : PawnRenderNodeWorker
     {
+        public PawnRenderNodeWorker_BionicSkin()
+        {
+            if (this.corpseRotation == 0f)
+            {
+                this.corpseRotation = Rand.Range(-45f, 45f);
+            }
+        }
 
         public override void PostDraw(PawnRenderNode node, PawnDrawParms parms, Mesh mesh, Matrix4x4 matrix)
         {
             base.PostDraw(node, parms, mesh, matrix);
-            CJTerminatorUtil.DrawBionicSkin(parms.pawn, node, parms);
+            CJTerminatorUtil.DrawBionicSkin(parms.pawn, node, parms, corpseRotation);
         }
 
-        //protected override Graphic GetGraphic(PawnRenderNode node, PawnDrawParms parms)
-        //{
-        //    return CJTerminatorUtil.GraphicForBionicSkin(parms.pawn);
-        //}
 
         public override void AppendDrawRequests(PawnRenderNode node, PawnDrawParms parms, List<PawnGraphicDrawRequest> requests)
         {
@@ -32,6 +35,10 @@ namespace CJTerminator
         {
             return parms.pawn.DrawSize;
         }
+
+        private float corpseRotation;
+
+
     }
 
 }

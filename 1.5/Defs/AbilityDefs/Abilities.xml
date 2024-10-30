@@ -21,10 +21,7 @@
       <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
       <warmupTime>0.5</warmupTime>
       <range>999</range>
-      <requireLineOfSight>true</requireLineOfSight>
-      <!-- <soundCast>Longjump_Jump</soundCast> -->
-      <soundLanding>Longjump_Land</soundLanding>
-      <flyWithCarriedThing>false</flyWithCarriedThing>
+      <requireLineOfSight>false</requireLineOfSight>
       <targetParams>
         <canTargetLocations>true</canTargetLocations>
         <canTargetItems>true</canTargetItems>
