@@ -27,13 +27,13 @@ namespace CJTerminator
             return pawn.health.hediffSet.GetBodyPartRecord(targetDef);
         }
 
-        public static void DrawBionicSkin(Pawn p,PawnRenderNode node, PawnDrawParms parms, float randomCorpseAngle)
+        public static void DrawBionicSkin(Pawn p,PawnRenderNode node, PawnDrawParms parms)
         {
-
+            float angle = p.Drawer.renderer.BodyAngle(PawnRenderFlags.DrawNow);
             Graphic g = GraphicForBionicSkin(p);
             if (p.Dead)
             {
-                g.Draw(p.DrawPos, p.Rotation, p, randomCorpseAngle);
+                g.Draw(p.DrawPos, p.Rotation, p, angle);
             }
             else
             {

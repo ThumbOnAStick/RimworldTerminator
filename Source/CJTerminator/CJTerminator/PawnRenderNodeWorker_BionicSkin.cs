@@ -22,7 +22,7 @@ namespace CJTerminator
         public override void PostDraw(PawnRenderNode node, PawnDrawParms parms, Mesh mesh, Matrix4x4 matrix)
         {
             base.PostDraw(node, parms, mesh, matrix);
-            CJTerminatorUtil.DrawBionicSkin(parms.pawn, node, parms, corpseRotation);
+            CJTerminatorUtil.DrawBionicSkin(parms.pawn, node, parms);
         }
 
 
