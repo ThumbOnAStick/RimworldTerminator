@@ -1,20 +1,21 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-	<!-- ================================= break ==================================== -->
-	
+  <!-- ================================= break ==================================== -->
+
   <ThingDef ParentName="LightMechanoid">
     <defName>Mech_CJTerminator</defName>
     <label>E-800</label>
-    <description>An ancient, AI designed armored android, originally constructed to infiltrate and exterminate humans.</description>
+    <description>An ancient, AI designed armored android, originally constructed to infiltrate and
+      exterminate humans.</description>
     <statBases>
-		<MoveSpeed>4.4</MoveSpeed>
-		<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
-		<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
-		<PsychicSensitivity>0.25</PsychicSensitivity>
-		<BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">5</BandwidthCost>
-        <MechEnergyLossPerHP  MayRequire="Ludeon.Rimworld.Biotech">0.2</MechEnergyLossPerHP>
-	</statBases>
+      <MoveSpeed>4.4</MoveSpeed>
+      <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+      <PsychicSensitivity>0.25</PsychicSensitivity>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost>
+      <MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.2</MechEnergyLossPerHP>
+    </statBases>
     <tools>
       <li>
         <label>left fist</label>
@@ -51,7 +52,7 @@
     <race>
       <intelligence>ToolUser</intelligence>
       <thinkTreeMain>Mechanoid</thinkTreeMain>
-	  <renderTree>CJTerminator</renderTree>
+      <renderTree>CJTerminator</renderTree>
       <baseBodySize>1.0</baseBodySize>
       <lifeStageAges>
         <li>
@@ -69,15 +70,15 @@
           <soundCall>Pawn_Mech_Fabricor_Call</soundCall>
         </li>
       </lifeStageAges>
-	  <body>Lancer</body>
+      <body>Lancer</body>
       <baseHealthScale>3</baseHealthScale>
       <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
     </race>
-	<butcherProducts>
-		<Steel>15</Steel>
-	</butcherProducts>
+    <butcherProducts>
+      <Steel>15</Steel>
+    </butcherProducts>
   </ThingDef>
 
   <PawnKindDef ParentName="LightMechanoidKind">
@@ -87,11 +88,11 @@
     <combatPower>200</combatPower>
     <lifeStages>
       <li MayRequire="Ludeon.RimWorld.Biotech">
-		<bodyGraphicData>
-			<texPath>Terminator/Mech/CJTerminator</texPath>
-			<shaderType>Cutout</shaderType>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>1.7</drawSize>
+        <bodyGraphicData>
+          <texPath>Terminator/Mech/CJTerminator</texPath>
+          <shaderType>Cutout</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.7</drawSize>
           <shadowData>
             <volume>(0.6, 0.8, 0.6)</volume>
           </shadowData>
@@ -116,15 +117,15 @@
       <li>RobotEquipWeapon</li>
     </abilities>
     <weaponTags>
+      <li>SimpleGun</li>
       <li>CJTerminatorgun</li>
       <li>ShortShots</li>
-		<li>PumpShotgun</li>
-		<li>IndustrialGunAdvanced</li>
-		<li>GunHeavy</li>
-		<li>Minigun</li>
-	  </weaponTags>
+      <li>PumpShotgun</li>
+      <li>IndustrialGunAdvanced</li>
+      <li>GunHeavy</li>
+      <li>Minigun</li>
+    </weaponTags>
   </PawnKindDef>
 
 
-  
 </Defs>

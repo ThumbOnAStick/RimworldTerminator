@@ -10,7 +10,7 @@
     <defName>RobotEquipWeapon</defName>
     <label>euip weapon</label>
     <description>Order a terminator to equip a weapon.</description>
-    <iconPath>UI/Abilities/MechLongJump</iconPath>
+    <iconPath>Terminator/UI/CJgunswitching</iconPath>
     <cooldownTicksRange>480</cooldownTicksRange>
     <hostile>false</hostile>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>

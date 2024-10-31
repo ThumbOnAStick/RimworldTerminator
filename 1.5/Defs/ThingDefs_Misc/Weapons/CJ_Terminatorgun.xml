@@ -67,4 +67,91 @@
             <speed>55</speed>
         </projectile>
     </ThingDef> -->
+
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>CJ_Terminatorgun_Bullet</defName>
+        <label>terminator bullet</label>
+        <graphicData>
+            <texPath>Things/Projectile/Bullet_Small</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>20</damageAmountBase>
+            <speed>70</speed>
+        </projectile>
+    </ThingDef>
+
+    <ThingDef ParentName="BaseHumanMakeableGun">
+        <defName>CJTerminatorcolt</defName>
+        <label>colt1911</label>
+        <description>This heavy double barreled machine gun was designed by a dangerous rogue AI. Made to serve E-800 units specifically.</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+          <texPath>Terminator/Weapons/CJTerminatorcolt</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.4</uiIconScale>
+        <soundInteract>Interact_Revolver</soundInteract>
+        <statBases>
+          <WorkToMake>6000</WorkToMake>
+          <Mass>1.4</Mass>
+          <AccuracyTouch>0.90</AccuracyTouch>
+          <AccuracyShort>0.80</AccuracyShort>
+          <AccuracyMedium>0.45</AccuracyMedium>
+          <AccuracyLong>0.35</AccuracyLong>
+          <RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+        </statBases>
+        <weaponTags>
+          <li>SimpleGun</li>
+          <li>Revolver</li>
+        </weaponTags>
+        <weaponClasses>
+          <li>RangedLight</li>
+        </weaponClasses>
+        <costList>
+          <Steel>30</Steel>
+          <Plasteel>10</Plasteel>
+          <ComponentIndustrial>2</ComponentIndustrial>
+          <ComponentSpacer>1</ComponentSpacer>
+        </costList>
+        <recipeMaker>
+          <skillRequirements>
+            <Crafting>8</Crafting>
+          </skillRequirements>
+          <displayPriority>400</displayPriority>
+        </recipeMaker>
+        <verbs>
+          <li>
+            <verbClass>Verb_Shoot</verbClass>
+            <hasStandardCommand>true</hasStandardCommand>
+            <defaultProjectile>CJ_Terminatorgun_Bullet</defaultProjectile>
+            <warmupTime>0.3</warmupTime>
+            <range>30</range>
+            <soundCast>1911Shoot</soundCast>
+            <soundCastTail>GunTail_Light</soundCastTail>
+            <muzzleFlashScale>9</muzzleFlashScale>
+          </li>
+        </verbs>
+        <tools>
+          <li>
+            <label>grip</label>
+            <capacities>
+              <li>Blunt</li>
+            </capacities>
+            <power>9</power>
+            <cooldownTime>2</cooldownTime>
+          </li>
+          <li>
+            <label>barrel</label>
+            <capacities>
+              <li>Blunt</li>
+              <li>Poke</li>
+            </capacities>
+            <power>9</power>
+            <cooldownTime>2</cooldownTime>
+          </li>
+        </tools>
+      </ThingDef>
 </Defs>

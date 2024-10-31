@@ -30,5 +30,21 @@
 		</subSounds>
 	</SoundDef>
 	
+	<SoundDef>
+		<defName>1911Shoot</defName>
+		<context>MapOnly</context>
+		<maxVoices>24</maxVoices>
+		<subSounds>
+			<li>
+			  <grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>darkscape-1911-a1-101298</clipPath>
+				</li>
+			  </grains>      
+			  <volumeRange>35~35</volumeRange>      
+			  <sustainLoop>False</sustainLoop>
+			</li>
+		  </subSounds>
 	
+	</SoundDef>
 </Defs>
