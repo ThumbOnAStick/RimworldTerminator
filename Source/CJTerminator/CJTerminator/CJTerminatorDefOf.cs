@@ -12,6 +12,6 @@ namespace CJTerminator
     public static class CJTerminatorDefOf
     {
         public static PawnKindDef Mech_CJTerminator;
-
+        public static SoundDef PickUpWeapon1;
     }
 }

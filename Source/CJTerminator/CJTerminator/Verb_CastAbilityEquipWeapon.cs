@@ -9,6 +9,7 @@ using UnityEngine;
 using UnityEngine.Assertions.Must;
 using Verse;
 using Verse.AI;
+using Verse.Sound;
 using static RimWorld.PsychicRitualRoleDef;
 using static UnityEngine.GraphicsBuffer;
 
@@ -25,6 +26,8 @@ namespace CJTerminator
         {
             //CasterPawn.drafter.Drafted = false;
             Job job = JobMaker.MakeJob(JobDefOf.Equip, currentWeapon);
+            CJTerminator.CJTerminatorDefOf.PickUpWeapon1.PlayOneShot(new TargetInfo(caster.Position, caster.MapHeld, false));
+
             CasterPawn.jobs.TryTakeOrderedJob(job, new JobTag?(JobTag.Misc));
         }
 

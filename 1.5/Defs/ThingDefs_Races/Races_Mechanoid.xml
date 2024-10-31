@@ -6,7 +6,7 @@
   <ThingDef ParentName="LightMechanoid">
     <defName>Mech_CJTerminator</defName>
     <label>E-800</label>
-    <description>Human-sized mechanoids often seen standing between militors and lancers. They have a weak and simple frame, and so are often seen in groups together.</description>
+    <description>An ancient, AI designed armored android, originally constructed to infiltrate and exterminate humans.</description>
     <statBases>
 		<MoveSpeed>4.4</MoveSpeed>
 		<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
@@ -84,7 +84,7 @@
     <defName>Mech_CJTerminator</defName>
     <label>E-800</label>
     <race>Mech_CJTerminator</race>
-    <combatPower>1000</combatPower>
+    <combatPower>200</combatPower>
     <lifeStages>
       <li MayRequire="Ludeon.RimWorld.Biotech">
 		<bodyGraphicData>
@@ -92,32 +92,32 @@
 			<shaderType>Cutout</shaderType>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>1.7</drawSize>
-			<shadowData>
-			  <volume>(0.6, 0.8, 0.6)</volume>
-			</shadowData>
-		  </bodyGraphicData>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
       </li>
-	  <li>
-		<bodyGraphicData>
-			<texPath>Terminator/Mech/CJTerminator</texPath>
-			<shaderType>Cutout</shaderType>
-			<graphicClass>Graphic_Multi</graphicClass>
-			<drawSize>1.7</drawSize>
-			<shadowData>
-			  <volume>(0.6, 0.8, 0.6)</volume>
-			</shadowData>
-		  </bodyGraphicData>
+      <li>
+        <bodyGraphicData>
+          <texPath>Terminator/Mech/CJTerminator</texPath>
+          <shaderType>Cutout</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.7</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
       </li>
     </lifeStages>
-	<techHediffsChance MayRequire="Ludeon.RimWorld.Biotech">1</techHediffsChance>
-	<techHediffsMoney>1000~9999</techHediffsMoney>
-    <weaponMoney>3000~9999</weaponMoney>
-	<abilities>
-		<li>RobotEquipWeapon</li>
-	</abilities>
+    <techHediffsChance MayRequire="Ludeon.RimWorld.Biotech">1</techHediffsChance>
+    <techHediffsMoney>1000~3000</techHediffsMoney>
+    <weaponMoney>3000~5000</weaponMoney>
+    <abilities>
+      <li>RobotEquipWeapon</li>
+    </abilities>
     <weaponTags>
-		<li>CJTerminatorgun</li>
-		<li>ShortShots</li>
+      <li>CJTerminatorgun</li>
+      <li>ShortShots</li>
 		<li>PumpShotgun</li>
 		<li>IndustrialGunAdvanced</li>
 		<li>GunHeavy</li>
