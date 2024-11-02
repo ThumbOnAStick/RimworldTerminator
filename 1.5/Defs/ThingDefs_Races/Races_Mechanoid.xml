@@ -3,17 +3,17 @@
 
   <!-- ================================= break ==================================== -->
 
-  <ThingDef ParentName="LightMechanoid">
+  <ThingDef ParentName="BaseMechanoid">
     <defName>Mech_CJTerminator</defName>
-    <label>E-800</label>
+    <label>T-800</label>
     <description>An ancient, AI designed armored android, originally constructed to infiltrate and
       exterminate humans.</description>
     <statBases>
-      <MoveSpeed>4.4</MoveSpeed>
-      <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+      <MoveSpeed>3.4</MoveSpeed>
+      <ArmorRating_Blunt>1.50</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.50</ArmorRating_Sharp>
       <PsychicSensitivity>0.25</PsychicSensitivity>
-      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">3</BandwidthCost>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">0</BandwidthCost>
       <MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.2</MechEnergyLossPerHP>
     </statBases>
     <tools>
@@ -71,9 +71,9 @@
         </li>
       </lifeStageAges>
       <body>Lancer</body>
-      <baseHealthScale>3</baseHealthScale>
+      <baseHealthScale>5</baseHealthScale>
       <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
-      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding</soundMeleeHitBuilding>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Generic</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
     </race>
     <butcherProducts>
@@ -81,18 +81,18 @@
     </butcherProducts>
   </ThingDef>
 
-  <PawnKindDef ParentName="LightMechanoidKind">
+  <PawnKindDef ParentName="BaseMechanoidKind">
     <defName>Mech_CJTerminator</defName>
-    <label>E-800</label>
+    <label>T-800</label>
     <race>Mech_CJTerminator</race>
-    <combatPower>200</combatPower>
+    <combatPower>500</combatPower>
     <lifeStages>
       <li MayRequire="Ludeon.RimWorld.Biotech">
         <bodyGraphicData>
           <texPath>Terminator/Mech/CJTerminator</texPath>
           <shaderType>Cutout</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.7</drawSize>
+          <drawSize>1.9</drawSize>
           <shadowData>
             <volume>(0.6, 0.8, 0.6)</volume>
           </shadowData>
@@ -103,7 +103,7 @@
           <texPath>Terminator/Mech/CJTerminator</texPath>
           <shaderType>Cutout</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.7</drawSize>
+          <drawSize>1.9</drawSize>
           <shadowData>
             <volume>(0.6, 0.8, 0.6)</volume>
           </shadowData>

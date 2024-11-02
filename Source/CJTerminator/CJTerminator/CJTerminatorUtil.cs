@@ -42,6 +42,30 @@ namespace CJTerminator
             }
         }
 
+        public static void DrawEyeGlow(Pawn p, PawnDrawParms parms)
+        {
+            if (p.Dead)
+            {
+                return;
+            }
+
+            Graphic g = GraphicForEyeGlow(p);
+            if (p.Rotation == Rot4.South)
+                g.Draw(p.DrawPos + eyeOffset1, p.Rotation, p);
+            else if (p.Rotation == Rot4.West)
+                g.Draw(p.DrawPos + eyeOffset2, p.Rotation, p);
+
+
+        }
+
+        public static Graphic GraphicForEyeGlow(Pawn pawn)
+        {
+
+
+            return GraphicDatabase.Get<Graphic_Single>(EyeGlowPath, ShaderDatabase.MoteGlow, BionicSkinDrawSize(pawn) * 0.1f, Color.red, Color.red);
+        }
+
+
         public static Graphic GraphicForBionicSkin(Pawn pawn)
         {
             BodyPartRecord r = GetRecordByName(pawn, "MechanicalThorax");
@@ -67,7 +91,10 @@ namespace CJTerminator
             return p.kindDef.lifeStages[0].bodyGraphicData.drawSize;
         }
 
+        static readonly Vector3 eyeOffset1 = new Vector3(0.18f, 0, 0.35f);
+        static readonly Vector3 eyeOffset2 = new Vector3(-0.27f, 0, 0.4f);
 
+        static readonly string EyeGlowPath = "Terminator/Mech/Dot";
         static readonly string SkinGoodMultiplePath = "Terminator/Mech/CJTerminator2";
         static readonly string SkinBadMultiplePath = "Terminator/Mech/CJTerminator3";
         static readonly string NoSkinMultiplePath = "Terminator/Mech/CJTerminator";

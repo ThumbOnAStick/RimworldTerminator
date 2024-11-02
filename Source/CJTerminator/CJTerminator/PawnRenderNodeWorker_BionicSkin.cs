@@ -23,6 +23,7 @@ namespace CJTerminator
         {
             base.PostDraw(node, parms, mesh, matrix);
             CJTerminatorUtil.DrawBionicSkin(parms.pawn, node, parms);
+            CJTerminatorUtil.DrawEyeGlow(parms.pawn, parms);
         }
 
 

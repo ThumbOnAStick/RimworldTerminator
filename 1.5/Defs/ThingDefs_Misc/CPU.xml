@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=============== Electronic Circuits ====================-->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>SkynetCPUBasic</defName>
+	<label>antique CPU module</label>
+	<description>A T800 CPU module.</description>
+		<graphicData>
+			<texPath>Terminator/Other/cj_cpu1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.6</drawSize>
+		</graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>true</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+	<stackLimit>75</stackLimit>
+	<statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <MarketValue>750</MarketValue>
+      <Mass>0.5</Mass>
+      <Flammability>0.1</Flammability>
+      <DeteriorationRate>0.1</DeteriorationRate>
+    </statBases>
+	<tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <deepCommonality>0</deepCommonality>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>false</smeltable>
+  </ThingDef>
+  
+  <ThingDef ParentName="ResourceBase">
+    <defName>SkynetCPUAdvanced</defName>
+	<label>advanced antique CPU module</label>
+	<description>A T880 CPU module.</description>
+		<graphicData>
+			<texPath>Terminator/Other/cj_cpu2</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.7</drawSize>
+		</graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <useHitPoints>true</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+	<stackLimit>75</stackLimit>
+	<statBases>
+      <MaxHitPoints>80</MaxHitPoints>
+      <MarketValue>1750</MarketValue>
+      <Mass>0.5</Mass>
+      <Flammability>0.1</Flammability>
+      <DeteriorationRate>0.1</DeteriorationRate>
+    </statBases>
+	<tradeTags>
+      <li>ExoticMisc</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>RewardStandardCore</li>
+    </thingSetMakerTags>
+    <intricate>true</intricate>
+    <thingCategories>
+      <li>Manufactured</li>
+    </thingCategories>
+    <deepCommonality>0</deepCommonality>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>false</smeltable>
+  </ThingDef>
+  
+  </Defs>
