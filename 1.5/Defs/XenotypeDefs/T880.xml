@@ -126,7 +126,9 @@
 					<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
 						<hediffToWholeBody>NuclearPowered</hediffToWholeBody>
+						<customWoundsFromFleshtype>CJ_Machineflesh</customWoundsFromFleshtype>
 					</li>
+					
 		</modExtensions>
 	<dislikesSunlight>false</dislikesSunlight>
 	<geneClass>Gene_Clotting</geneClass>
