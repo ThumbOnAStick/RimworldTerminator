@@ -1,7 +1,7 @@
 <Defs>
   <BodyDef>
     <defName>Mech_CJTerminator</defName>
-    <label>T-800</label>
+    <label>E-800</label>
     <corePart>
       <def>MechanicalThorax</def>
       <height>Middle</height>

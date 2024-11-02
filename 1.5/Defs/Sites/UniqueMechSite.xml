@@ -2,10 +2,10 @@
 <Defs>
   
 </Defs> 
-    <SitePartDef Name="UniqueMechSiteParent" Abstract="true">
+  <!-- <SitePartDef Name="UniqueMechSiteParent" Abstract="true">
 
-    <siteTexture>Terminator/Other/repairjunk_icon</siteTexture>
-    <expandingIconTexture>Terminator/Other/repairjunk_icon</expandingIconTexture>
+    <siteTexture>Bastion/Other/repairjunk_icon</siteTexture>
+    <expandingIconTexture>Bastion/Other/repairjunk_icon</expandingIconTexture>
     <approachOrderString>Approach {0}</approachOrderString>
     <approachingReportString>Approach {0}</approachingReportString>
     <requiresFaction>false</requiresFaction>
@@ -16,14 +16,14 @@
     <wantsThreatPoints>true</wantsThreatPoints>
     <disallowsAutomaticDetectionTimerStart>true</disallowsAutomaticDetectionTimerStart>
     <considerEnteringAsAttack>false</considerEnteringAsAttack>
-    <workerClass>CJ.SitePartWorker_UniqueMechSite</workerClass>
+    <workerClass>Bastion.SitePartWorker_UniqueMechSite</workerClass>
     <tags>
       <li>UniqueMechSite</li>
     </tags>
   </SitePartDef>
 
     <SitePartDef ParentName="UniqueMechSiteParent">
-    <defName>CJ_UniqueMechSiteTerminator</defName>
+    <defName>Bastion_UniqueMechSiteTerminator</defName>
     <label>Unique mech site</label>
     <description>The location of the unique mech wreck is here.</description>
     <selectionWeight>1</selectionWeight>
@@ -33,8 +33,8 @@
     <defName>GenStep_Terminator</defName>
     <linkWithSite>Bastion_UniqueMechSiteTerminator</linkWithSite>
     <order>1600</order>
-    <genStep Class="CJ_GenStep_SpawnWreck">
-      <wreckDef>CJ_AncientTerminatorJunk</wreckDef>
+    <genStep Class="Bastion.Bastion_GenStep_SpawnWreck">
+      <wreckDef>Bastion_AncientTerminatorJunk</wreckDef>
     </genStep>
   </GenStepDef> 
 -->

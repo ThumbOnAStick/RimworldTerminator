@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <XenotypeDef>
+    <defName>CJ_T880</defName>
+    <label>Terminator</label>
+    <description>Emotionless killing machine.</description>
+    <iconPath>UI/Icons/Xenotypes/TerminatorB-icon</iconPath>
+    <soundDefOnImplant>PawnBecameSanguophage</soundDefOnImplant>
+    <generateWithXenogermReplicatingHediffChance>0.5</generateWithXenogermReplicatingHediffChance>
+    <xenogermReplicatingDurationLeftDaysRange>0.1~140</xenogermReplicatingDurationLeftDaysRange>
+    <combatPowerFactor>5</combatPowerFactor>
+    <displayPriority>-1000</displayPriority>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <genes>
+      <li>Ageless</li>
+      <li>Deathless</li>
+      <li>Sterile</li>
+      <li>MeleeDamage_Strong</li>
+      <li>DarkVision</li>
+      <li>TotalHealing</li>
+      <li>DiseaseFree</li>
+      <li>Unstoppable</li>
+      <li>AptitudeRemarkable_Shooting</li>
+      <li>AptitudeTerrible_Animals</li>
+      <li>AptitudeTerrible_Artistic</li>
+      <li>AptitudeTerrible_Cooking</li>
+	  <li>Aggression_DeadCalm</li>
+	  <li>Neversleep</li>
+      <li>CJ_Endoskeleton</li>
+	  <li>ArchiteMetabolism</li>	  
+    </genes>
+  </XenotypeDef>
+
+ 
+
+  
+
+  
+
+  
+	<GeneDef>
+	<defName>CJ_Endoskeleton</defName>
+	<label>machine skeleton</label>
+	<description>The unstoppable physique of a machine.</description>
+    <iconPath>UI/Icons/Genes/Terminator-icon</iconPath>
+	<displayCategory>Healing</displayCategory>
+	<displayOrderInCategory>80</displayOrderInCategory>
+	<biostatCpx>6</biostatCpx>
+	<biostatMet>-2</biostatMet>
+	<forcedTraits>
+	<li>
+	<def>Psychopath</def>
+	</li>
+	<li>
+	<def>Asexual</def>
+	</li>
+	<li>
+	<def>PerfectMemory</def>
+</li>
+		</forcedTraits>
+		<disablesNeeds>
+			<li>Beauty</li>
+			<li>Joy</li>
+			<li>Comfort</li>
+			<li>Outdoors</li>
+			<li>Indoors</li>
+			<li>DrugDesire</li>
+			<li>RoomSize</li>
+			<li>Food</li>
+		</disablesNeeds>
+		<exclusionTags>
+		<li>Pain</li>
+	</exclusionTags>
+	<statOffsets>
+	<SocialImpact>-0.3</SocialImpact>
+		<MoveSpeed>-0.3</MoveSpeed>
+		<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+		<ToxicResistance>1</ToxicResistance>
+		<ShootingAccuracyPawn>0.3</ShootingAccuracyPawn>
+		<AimingDelayFactor>0.15</AimingDelayFactor>
+		<MeleeHitChance>-0.2</MeleeHitChance>
+		<MeleeDodgeChance>-0.2</MeleeDodgeChance>
+		<ArmorRating_Blunt>1.8</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.8</ArmorRating_Sharp>
+			<ArmorRating_Heat>1.50</ArmorRating_Heat>
+			<NegotiationAbility>0.20</NegotiationAbility>
+			<LeatherAmount>0</LeatherAmount>
+			<MeatAmount>0</MeatAmount>
+			<Flammability>0</Flammability>
+			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
+			<ComfyTemperatureMax>250</ComfyTemperatureMax>
+			<MarketValue>5000</MarketValue>
+			<PsychicSensitivity>0</PsychicSensitivity>
+		</statOffsets>
+	<capMods>
+		<li>
+			<capacity>Manipulation</capacity>
+			<offset>0.1</offset>
+		</li>
+		<li>
+			<capacity>Consciousness</capacity>
+			<offset>0.3</offset>
+		</li>
+	</capMods>
+	<makeImmuneTo>
+		<li>Flu</li>
+		<li>Malaria</li>
+		<li>SleepingSickness</li>
+		<li>Plague</li>
+		<li>WoundInfection</li>
+		<li>LungRot</li>
+		<li>HeartAttack</li>
+	</makeImmuneTo>
+	<hediffGiversCannotGive>
+		<li>Carcinoma</li>
+		<li>ToxGasExposure</li>
+		<li>BadBack</li>
+		<li>Frail</li>
+		<li>Cataract</li>
+		<li>Dementia</li>
+		<li>Alzheimers</li>
+		<li>Asthma</li>
+		<li>HeartArteryBlockage</li>
+		<li>BloodLoss</li>
+	</hediffGiversCannotGive>
+					<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+						<hediffToWholeBody>NuclearPowered</hediffToWholeBody>
+					</li>
+		</modExtensions>
+	<dislikesSunlight>false</dislikesSunlight>
+	<geneClass>Gene_Clotting</geneClass>
+	<foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
+	<statFactors>
+		<RawNutritionFactor>0.01</RawNutritionFactor>
+		<RestFallRateFactor>0.01</RestFallRateFactor>
+	 <Fertility>0</Fertility>
+	</statFactors>
+	<painFactor>0</painFactor>
+		<selectionWeight>0</selectionWeight>
+	</GeneDef>
+	
+		
+ </Defs>

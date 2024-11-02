@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>  
- <ThingDef Name="CJ_AncientTerminatorJunk2" ParentName="CJ_AncientBastionJunk">
+<!-- <ThingDef Name="Bastion_AncientTerminatorJunk" ParentName="Bastion_AncientBastionJunk">
+    <defName>Bastion_AncientTerminatorJunk</defName>
     <label>Ancient Combat Mechanoid Junk</label>
     <description>The remains of a fearsome terminator.\nThe interior conduits look deteriorated; It could probably be restored by a mechanitor with some advanced components.</description>
     <rotatable>false</rotatable>
@@ -28,7 +29,7 @@
         <letterLabel>Ancient mech</letterLabel>
         <letterText>One of your colonists spotted an ancient combat mechanoid! Maybe you could bring it back to working order.</letterText>
       </li>
-      <li Class="Terminator.CJ_AncientJunk_CompProperties">
+      <li Class="Bastion.Bastion_AncientJunk_CompProperties">
         <mechDef>Mech_CJTerminator</mechDef>
       </li>
     </comps>

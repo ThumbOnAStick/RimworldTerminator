@@ -11,6 +11,7 @@ namespace CJTerminator
 {
     public static class CJTerminatorUtil
     {
+
         public static float BodyPartHarmRatio(Pawn pawn, BodyPartRecord r)
         {
             float hitPoints = pawn.health.hediffSet.GetPartHealth(r);
@@ -28,9 +29,17 @@ namespace CJTerminator
 
         public static void DrawBionicSkin(Pawn p,PawnRenderNode node, PawnDrawParms parms)
         {
-
+            float angle = p.Drawer.renderer.BodyAngle(PawnRenderFlags.DrawNow);
             Graphic g = GraphicForBionicSkin(p);
-            g.Draw(p.DrawPos, p.Rotation, p);
+            if (p.Dead)
+            {
+                g.Draw(p.DrawPos, p.Rotation, p, angle);
+            }
+            else
+            {
+                g.Draw(p.DrawPos, p.Rotation, p);
+
+            }
         }
 
         public static Graphic GraphicForBionicSkin(Pawn pawn)

@@ -1,5 +1,5 @@
 <Defs>
-     <GenStepDef>
+    <!-- <GenStepDef>
         <defName>GenStep_AncientTerminatorJunk</defName>
         <order>1600</order>
         <genStep Class="Bastion.GenStep_ScatterChance">
@@ -19,11 +19,11 @@
             <onlyOnStartingMap>false</onlyOnStartingMap>
             <layout>
                 <li>
-                    <thing>CJ_AncientTerminatorJunk</thing>
+                    <thing>Bastion_AncientTerminatorJunk</thing>
                     <filthDef>Filth_MachineBits</filthDef>
                     <filthExpandBy>1</filthExpandBy>
                 </li>
             </layout>
         </genStep>
-    </GenStepDef> 
+    </GenStepDef> -->
 </Defs>
