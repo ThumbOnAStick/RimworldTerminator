@@ -7,6 +7,7 @@ using Verse;
 using RimWorld;
 using LudeonTK;
 using UnityEngine;
+using Verse.AI;
 
 namespace CJTerminator
 {
@@ -57,8 +58,35 @@ namespace CJTerminator
             Log.Message(CJTerminatorUtil.BodyPartHarmRatio(p,r));
         }
 
+        [DebugAction("CJTerminator", null, false, false, false, false, 0, false, actionType = DebugActionType.ToolMapForPawns, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+        public static void EquipWeaponForTerminator(Pawn p)
+        {
+            Thing weapon = Find.CurrentMap.spawnedThings.First(x => x.def.IsWeapon);
+            Job job = JobMaker.MakeJob(JobDefOf.Equip, weapon);
+
+            p.jobs.TryTakeOrderedJob(job, new JobTag?(JobTag.Misc));
+        }
 
 
+        [DebugAction("CJTerminator", null, false, false, false, false, 0, false, actionType = DebugActionType.ToolMapForPawns, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+        public static void SpawnTerminatorProtectingPawn(Pawn p)
+        {
+
+            PawnKindDef localKindDef = CJTerminatorDefOf.Mech_CJTerminator;
+            if (p.mechanitor != null && p.mechanitor.TotalBandwidth - p.mechanitor.UsedBandwidth >= 3)
+            {
+                Faction faction = FactionUtility.DefaultFactionFrom(FactionDefOf.PlayerColony);
+                Pawn terminator = PawnGenerator.GeneratePawn(localKindDef, faction);
+                Pawn overseer = terminator.GetOverseer();
+                overseer?.relations.RemoveDirectRelation(PawnRelationDefOf.Overseer, terminator);
+                p.relations.AddDirectRelation(PawnRelationDefOf.Overseer, terminator);
+                GenSpawn.Spawn(terminator, UI.MouseCell(), Find.CurrentMap, WipeMode.Vanish);
+            }
+
+
+
+
+        }
 
 
     }

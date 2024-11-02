@@ -11,6 +11,7 @@ namespace CJTerminator
 {
     public static class CJTerminatorUtil
     {
+
         public static float BodyPartHarmRatio(Pawn pawn, BodyPartRecord r)
         {
             float hitPoints = pawn.health.hediffSet.GetPartHealth(r);
@@ -28,10 +29,42 @@ namespace CJTerminator
 
         public static void DrawBionicSkin(Pawn p,PawnRenderNode node, PawnDrawParms parms)
         {
-
+            float angle = p.Drawer.renderer.BodyAngle(PawnRenderFlags.DrawNow);
             Graphic g = GraphicForBionicSkin(p);
-            g.Draw(p.DrawPos, p.Rotation, p);
+            if (p.Dead)
+            {
+                g.Draw(p.DrawPos, p.Rotation, p, angle);
+            }
+            else
+            {
+                g.Draw(p.DrawPos, p.Rotation, p);
+
+            }
         }
+
+        public static void DrawEyeGlow(Pawn p, PawnDrawParms parms)
+        {
+            if (p.Dead)
+            {
+                return;
+            }
+
+            Graphic g = GraphicForEyeGlow(p);
+            if (p.Rotation == Rot4.South)
+                g.Draw(p.DrawPos + eyeOffset1, p.Rotation, p);
+            else if (p.Rotation == Rot4.West)
+                g.Draw(p.DrawPos + eyeOffset2, p.Rotation, p);
+
+
+        }
+
+        public static Graphic GraphicForEyeGlow(Pawn pawn)
+        {
+
+
+            return GraphicDatabase.Get<Graphic_Single>(EyeGlowPath, ShaderDatabase.MoteGlow, BionicSkinDrawSize(pawn) * 0.1f, Color.red, Color.red);
+        }
+
 
         public static Graphic GraphicForBionicSkin(Pawn pawn)
         {
@@ -58,7 +91,10 @@ namespace CJTerminator
             return p.kindDef.lifeStages[0].bodyGraphicData.drawSize;
         }
 
+        static readonly Vector3 eyeOffset1 = new Vector3(0.18f, 0, 0.35f);
+        static readonly Vector3 eyeOffset2 = new Vector3(-0.27f, 0, 0.4f);
 
+        static readonly string EyeGlowPath = "Terminator/Mech/Dot";
         static readonly string SkinGoodMultiplePath = "Terminator/Mech/CJTerminator2";
         static readonly string SkinBadMultiplePath = "Terminator/Mech/CJTerminator3";
         static readonly string NoSkinMultiplePath = "Terminator/Mech/CJTerminator";
