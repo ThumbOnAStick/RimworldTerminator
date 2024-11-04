@@ -12,7 +12,11 @@
     <graphicData>
       <texPath>Terminator/Drug/Powercell</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
+<<<<<<< HEAD
 	  <drawSize>(0.5)</drawSize>
+=======
+	  <drawSize>(0.7)</drawSize>
+>>>>>>> b7ae53d3f984724bd90b756b707bc250408fa90b
     </graphicData>
     <rotatable>false</rotatable>
     <statBases>

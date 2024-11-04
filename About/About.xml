@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ModMetaData>
-   <name>CJE800</name>
-   <author>Crackajack</author>
-   <packageId>Crackajack.CJE800</packageId>
+   <name>Terminators</name>
+   <author>Crackajack, Thumbstick</author>
+   <packageId>Crackajack.Terminators</packageId>
    <supportedVersions>
 	  <li>1.5</li>
    </supportedVersions>
    
-   <description>Terminator!</description>
+   <description>Terminators!</description>
    <modDependencies>
 	<li>
 		<packageId>brrainz.harmony</packageId>
@@ -19,5 +19,16 @@
 		<packageId>Ludeon.RimWorld.Biotech</packageId>
 		<displayName>Biotech</displayName>
 	</li>
+		<li>
+			<packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId>
+			<displayName>Vanilla Expanded Framework</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/workshop/filedetails/?id=2023507013</steamWorkshopUrl>
+		</li>
 	</modDependencies>
+  <loadAfter>
+	<li>Ludeon.RimWorld</li>
+	<li>Ludeon.RimWorld.Biotech</li>
+	<li>brrainz.harmony</li>
+	<li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+  </loadAfter>
 </ModMetaData>

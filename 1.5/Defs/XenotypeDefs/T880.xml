@@ -18,7 +18,10 @@
       <li>Sterile</li>
       <li>MeleeDamage_Strong</li>
       <li>DarkVision</li>
+<<<<<<< HEAD
       <li>TotalHealing</li>
+=======
+>>>>>>> b7ae53d3f984724bd90b756b707bc250408fa90b
       <li>DiseaseFree</li>
       <li>Unstoppable</li>
       <li>AptitudeRemarkable_Shooting</li>
@@ -81,9 +84,15 @@
 		<AimingDelayFactor>0.15</AimingDelayFactor>
 		<MeleeHitChance>-0.2</MeleeHitChance>
 		<MeleeDodgeChance>-0.2</MeleeDodgeChance>
+<<<<<<< HEAD
 		<ArmorRating_Blunt>1.8</ArmorRating_Blunt>
 			<ArmorRating_Sharp>1.8</ArmorRating_Sharp>
 			<ArmorRating_Heat>1.50</ArmorRating_Heat>
+=======
+		<ArmorRating_Blunt>1.6</ArmorRating_Blunt>
+			<ArmorRating_Sharp>1.6</ArmorRating_Sharp>
+			<ArmorRating_Heat>1.20</ArmorRating_Heat>
+>>>>>>> b7ae53d3f984724bd90b756b707bc250408fa90b
 			<NegotiationAbility>0.20</NegotiationAbility>
 			<LeatherAmount>0</LeatherAmount>
 			<MeatAmount>0</MeatAmount>
@@ -127,7 +136,13 @@
 					<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
 						<hediffToWholeBody>NuclearPowered</hediffToWholeBody>
+<<<<<<< HEAD
 					</li>
+=======
+						<customWoundsFromFleshtype>CJ_Machineflesh</customWoundsFromFleshtype>
+					</li>
+					
+>>>>>>> b7ae53d3f984724bd90b756b707bc250408fa90b
 		</modExtensions>
 	<dislikesSunlight>false</dislikesSunlight>
 	<geneClass>Gene_Clotting</geneClass>

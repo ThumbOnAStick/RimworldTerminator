@@ -8,7 +8,11 @@
 
   <AbilityDef Name="RobotEquipWeapon">
     <defName>RobotEquipWeapon</defName>
+<<<<<<< HEAD
     <label>euip weapon</label>
+=======
+    <label>equip weapon</label>
+>>>>>>> b7ae53d3f984724bd90b756b707bc250408fa90b
     <description>Order a terminator to equip a weapon.</description>
     <iconPath>Terminator/UI/CJgunswitching</iconPath>
     <cooldownTicksRange>480</cooldownTicksRange>

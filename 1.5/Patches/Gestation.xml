@@ -1,0 +1,8 @@
+<Patch>
+<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="LargeMechGestator"]/recipes</xpath>
+		<value>
+			<li>Mech_CJTerminator</li>
+		</value>
+	</Operation>
+	</Patch>

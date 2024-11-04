@@ -10,7 +10,11 @@
 		<graphicData>
 			<texPath>Terminator/Other/cj_cpu1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+<<<<<<< HEAD
 			<drawSize>0.6</drawSize>
+=======
+			<drawSize>0.8</drawSize>
+>>>>>>> b7ae53d3f984724bd90b756b707bc250408fa90b
 		</graphicData>
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Metal_Drop</soundDrop>
@@ -46,7 +50,11 @@
 		<graphicData>
 			<texPath>Terminator/Other/cj_cpu2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+<<<<<<< HEAD
 			<drawSize>0.7</drawSize>
+=======
+			<drawSize>0.9</drawSize>
+>>>>>>> b7ae53d3f984724bd90b756b707bc250408fa90b
 		</graphicData>
     <soundInteract>Metal_Drop</soundInteract>
     <soundDrop>Metal_Drop</soundDrop>
