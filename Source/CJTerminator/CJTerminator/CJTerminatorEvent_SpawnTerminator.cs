@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 using Verse;
+using Verse.Sound;
 
 namespace CJTerminator
 {
@@ -56,12 +57,14 @@ namespace CJTerminator
             PawnKindDef localKindDef = CJTerminatorDefOf.Mech_CJTerminator;
             if (newOverseer.mechanitor != null && newOverseer.mechanitor.TotalBandwidth - newOverseer.mechanitor.UsedBandwidth >= 3)
             {
+                Find.MusicManagerPlay.ForceSilenceFor(5f);
                 Faction faction = FactionUtility.DefaultFactionFrom(FactionDefOf.PlayerColony);
                 Pawn terminator = PawnGenerator.GeneratePawn(localKindDef, faction);
                 Pawn overseer = terminator.GetOverseer();
                 overseer?.relations.RemoveDirectRelation(PawnRelationDefOf.Overseer, terminator);
                 newOverseer.relations.AddDirectRelation(PawnRelationDefOf.Overseer, terminator);
                 GenSpawn.Spawn(terminator, targetCell, Find.CurrentMap, WipeMode.Vanish);
+                CJTerminatorDefOf.T800Apears.PlayOneShotOnCamera();
             }
 
         }
@@ -74,7 +77,7 @@ namespace CJTerminator
 
 
         private bool fired;
-        private readonly int delay = 300;
+        private readonly int delay = 250;
         private Map eventMap;
         private IntVec3 targetCell;
         private Pawn newOverseer;

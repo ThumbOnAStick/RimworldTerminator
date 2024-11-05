@@ -3,28 +3,52 @@
   "WorkspaceRootPath": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\cjterminator\\pawnrendernodeworker_bionicskin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|solutionrelative:cjterminator\\pawnrendernodeworker_bionicskin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\cjterminator\\mote_terminatorsphere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|solutionrelative:cjterminator\\mote_terminatorsphere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|d:\\steamlibrary\\steamapps\\common\\rimworld\\mods\\cj e-800\\source\\cjterminator\\cjterminator\\cjterminatorevent_spawnterminator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|solutionrelative:cjterminator\\cjterminatorevent_spawnterminator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|d:\\steamlibrary\\steamapps\\common\\rimworld\\mods\\cj e-800\\source\\cjterminator\\cjterminator\\cjterminatormapevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\cjterminator\\cjterminatormapevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|solutionrelative:cjterminator\\cjterminatormapevent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|d:\\steamlibrary\\steamapps\\common\\rimworld\\mods\\cj e-800\\source\\cjterminator\\cjterminator\\cjterminatormapeventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\cjterminator\\cjterminatormapeventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|solutionrelative:cjterminator\\cjterminatormapeventhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|d:\\steamlibrary\\steamapps\\common\\rimworld\\mods\\cj e-800\\source\\cjterminator\\cjterminator\\event_terminatorappears.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|solutionrelative:cjterminator\\event_terminatorappears.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\cjterminator\\harmonypatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|solutionrelative:cjterminator\\harmonypatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\cjterminator\\subeffecterterminatorlightning.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|solutionrelative:cjterminator\\subeffecterterminatorlightning.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\cjterminator\\subeffecterterminatorshpere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|solutionrelative:cjterminator\\subeffecterterminatorshpere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\cjterminator\\cjterminatorutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|solutionrelative:cjterminator\\cjterminatorutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\cjterminator\\debugactioncjterminator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|solutionrelative:cjterminator\\debugactioncjterminator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\cjterminator\\cjterminatorutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|solutionrelative:cjterminator\\cjterminatorutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\cjterminator\\event_terminatorappears.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|solutionrelative:cjterminator\\event_terminatorappears.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\cjterminator\\cjterminatordefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|solutionrelative:cjterminator\\cjterminatordefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\cjterminator\\cjterminatormod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -33,30 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\cjterminator\\mote_terminatorlightning.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|solutionrelative:cjterminator\\mote_terminatorlightning.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|d:\\steamlibrary\\steamapps\\common\\rimworld\\mods\\cj e-800\\source\\cjterminator\\cjterminator\\mote_terminatorsphere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|solutionrelative:cjterminator\\mote_terminatorsphere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|d:\\steamlibrary\\steamapps\\common\\rimworld\\mods\\cj e-800\\source\\cjterminator\\cjterminator\\subeffecterterminatorlightning.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|solutionrelative:cjterminator\\subeffecterterminatorlightning.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|d:\\steamlibrary\\steamapps\\common\\rimworld\\mods\\cj e-800\\source\\cjterminator\\cjterminator\\subeffecterterminatorshpere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|solutionrelative:cjterminator\\subeffecterterminatorshpere.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\cjterminator\\harmonypatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|solutionrelative:cjterminator\\harmonypatches.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\cjterminator\\pawnrendernodeworker_bionicskin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|solutionrelative:cjterminator\\pawnrendernodeworker_bionicskin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\cjterminator\\cjterminatordefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|solutionrelative:cjterminator\\cjterminatordefof.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{451D6BE7-5D10-401C-8F1C-7B60943186A5}|CJTerminator\\CJTerminator.csproj|D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\cjterminator\\verb_castabilityequipweapon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -73,7 +73,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,123 +82,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "CJTerminatorMod.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\CJTerminatorMod.cs",
-              "RelativeDocumentMoniker": "CJTerminator\\CJTerminatorMod.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\CJTerminatorMod.cs",
-              "RelativeToolTip": "CJTerminator\\CJTerminatorMod.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T08:38:30.035Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CJTerminatorUtil.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\CJTerminatorUtil.cs",
-              "RelativeDocumentMoniker": "CJTerminator\\CJTerminatorUtil.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\CJTerminatorUtil.cs",
-              "RelativeToolTip": "CJTerminator\\CJTerminatorUtil.cs",
-              "ViewState": "AgIAAEUAAAAAAAAAAAAywFsAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T10:40:53.27Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CJTerminatorMapEventHandler.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\CJTerminatorMapEventHandler.cs",
-              "RelativeDocumentMoniker": "CJTerminator\\CJTerminatorMapEventHandler.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\CJTerminatorMapEventHandler.cs",
-              "RelativeToolTip": "CJTerminator\\CJTerminatorMapEventHandler.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAywBwAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T01:27:58.481Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CJTerminatorMapEvent.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\CJTerminatorMapEvent.cs",
-              "RelativeDocumentMoniker": "CJTerminator\\CJTerminatorMapEvent.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\CJTerminatorMapEvent.cs",
-              "RelativeToolTip": "CJTerminator\\CJTerminatorMapEvent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T01:31:00.575Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CJTerminatorEvent_SpawnTerminator.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\CJTerminatorEvent_SpawnTerminator.cs",
-              "RelativeDocumentMoniker": "CJTerminator\\CJTerminatorEvent_SpawnTerminator.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\CJTerminatorEvent_SpawnTerminator.cs",
-              "RelativeToolTip": "CJTerminator\\CJTerminatorEvent_SpawnTerminator.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAABCwEwAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T01:34:26.379Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DebugActionCJTerminator.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\DebugActionCJTerminator.cs",
-              "RelativeDocumentMoniker": "CJTerminator\\DebugActionCJTerminator.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\DebugActionCJTerminator.cs",
-              "RelativeToolTip": "CJTerminator\\DebugActionCJTerminator.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAABCwEEAAABDAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T08:48:09.801Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Event_TerminatorAppears.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\Event_TerminatorAppears.cs",
-              "RelativeDocumentMoniker": "CJTerminator\\Event_TerminatorAppears.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\Event_TerminatorAppears.cs",
-              "RelativeToolTip": "CJTerminator\\Event_TerminatorAppears.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T01:25:26.286Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Mote_TerminatorLightning.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\Mote_TerminatorLightning.cs",
-              "RelativeDocumentMoniker": "CJTerminator\\Mote_TerminatorLightning.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\Mote_TerminatorLightning.cs",
-              "RelativeToolTip": "CJTerminator\\Mote_TerminatorLightning.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAABBwCsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T11:30:03.191Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Mote_TerminatorSphere.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\Mote_TerminatorSphere.cs",
-              "RelativeDocumentMoniker": "CJTerminator\\Mote_TerminatorSphere.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\Mote_TerminatorSphere.cs",
-              "RelativeToolTip": "CJTerminator\\Mote_TerminatorSphere.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-04T23:43:11.92Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "SubEffecterTerminatorLightning.cs",
               "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\SubEffecterTerminatorLightning.cs",
               "RelativeDocumentMoniker": "CJTerminator\\SubEffecterTerminatorLightning.cs",
@@ -211,20 +94,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "SubEffecterTerminatorShpere.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\SubEffecterTerminatorShpere.cs",
-              "RelativeDocumentMoniker": "CJTerminator\\SubEffecterTerminatorShpere.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\SubEffecterTerminatorShpere.cs",
-              "RelativeToolTip": "CJTerminator\\SubEffecterTerminatorShpere.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAA4wBsAAABZAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "PawnRenderNodeWorker_BionicSkin.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\PawnRenderNodeWorker_BionicSkin.cs",
+              "RelativeDocumentMoniker": "CJTerminator\\PawnRenderNodeWorker_BionicSkin.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\PawnRenderNodeWorker_BionicSkin.cs",
+              "RelativeToolTip": "CJTerminator\\PawnRenderNodeWorker_BionicSkin.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAABCwBsAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T00:19:06.173Z",
+              "WhenOpened": "2024-10-11T11:23:57.152Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 1,
+              "Title": "Mote_TerminatorSphere.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\Mote_TerminatorSphere.cs",
+              "RelativeDocumentMoniker": "CJTerminator\\Mote_TerminatorSphere.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\Mote_TerminatorSphere.cs",
+              "RelativeToolTip": "CJTerminator\\Mote_TerminatorSphere.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T23:43:11.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "HarmonyPatches.cs",
               "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\HarmonyPatches.cs",
               "RelativeDocumentMoniker": "CJTerminator\\HarmonyPatches.cs",
@@ -237,29 +133,131 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "PawnRenderNodeWorker_BionicSkin.cs",
-              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\PawnRenderNodeWorker_BionicSkin.cs",
-              "RelativeDocumentMoniker": "CJTerminator\\PawnRenderNodeWorker_BionicSkin.cs",
-              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\PawnRenderNodeWorker_BionicSkin.cs",
-              "RelativeToolTip": "CJTerminator\\PawnRenderNodeWorker_BionicSkin.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAABPAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "CJTerminatorMapEventHandler.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\CJTerminatorMapEventHandler.cs",
+              "RelativeDocumentMoniker": "CJTerminator\\CJTerminatorMapEventHandler.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\CJTerminatorMapEventHandler.cs",
+              "RelativeToolTip": "CJTerminator\\CJTerminatorMapEventHandler.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAywBwAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-11T11:23:57.152Z",
+              "WhenOpened": "2024-11-05T01:27:58.481Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 3,
+              "Title": "CJTerminatorMapEvent.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\CJTerminatorMapEvent.cs",
+              "RelativeDocumentMoniker": "CJTerminator\\CJTerminatorMapEvent.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\CJTerminatorMapEvent.cs",
+              "RelativeToolTip": "CJTerminator\\CJTerminatorMapEvent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T01:31:00.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CJTerminatorEvent_SpawnTerminator.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\CJTerminatorEvent_SpawnTerminator.cs",
+              "RelativeDocumentMoniker": "CJTerminator\\CJTerminatorEvent_SpawnTerminator.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\CJTerminatorEvent_SpawnTerminator.cs",
+              "RelativeToolTip": "CJTerminator\\CJTerminatorEvent_SpawnTerminator.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAxwDYAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T01:34:26.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SubEffecterTerminatorShpere.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\SubEffecterTerminatorShpere.cs",
+              "RelativeDocumentMoniker": "CJTerminator\\SubEffecterTerminatorShpere.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\SubEffecterTerminatorShpere.cs",
+              "RelativeToolTip": "CJTerminator\\SubEffecterTerminatorShpere.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA4wBsAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T00:19:06.173Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CJTerminatorUtil.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\CJTerminatorUtil.cs",
+              "RelativeDocumentMoniker": "CJTerminator\\CJTerminatorUtil.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\CJTerminatorUtil.cs",
+              "RelativeToolTip": "CJTerminator\\CJTerminatorUtil.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAywFsAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T10:40:53.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "DebugActionCJTerminator.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\DebugActionCJTerminator.cs",
+              "RelativeDocumentMoniker": "CJTerminator\\DebugActionCJTerminator.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\DebugActionCJTerminator.cs",
+              "RelativeToolTip": "CJTerminator\\DebugActionCJTerminator.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAABCwEEAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T08:48:09.801Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Event_TerminatorAppears.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\Event_TerminatorAppears.cs",
+              "RelativeDocumentMoniker": "CJTerminator\\Event_TerminatorAppears.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\Event_TerminatorAppears.cs",
+              "RelativeToolTip": "CJTerminator\\Event_TerminatorAppears.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-05T01:25:26.286Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "CJTerminatorDefOf.cs",
               "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\CJTerminatorDefOf.cs",
               "RelativeDocumentMoniker": "CJTerminator\\CJTerminatorDefOf.cs",
               "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\CJTerminatorDefOf.cs",
               "RelativeToolTip": "CJTerminator\\CJTerminatorDefOf.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-11T08:52:33.931Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CJTerminatorMod.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\CJTerminatorMod.cs",
+              "RelativeDocumentMoniker": "CJTerminator\\CJTerminatorMod.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\CJTerminatorMod.cs",
+              "RelativeToolTip": "CJTerminator\\CJTerminatorMod.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-11T08:38:30.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Mote_TerminatorLightning.cs",
+              "DocumentMoniker": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\Mote_TerminatorLightning.cs",
+              "RelativeDocumentMoniker": "CJTerminator\\Mote_TerminatorLightning.cs",
+              "ToolTip": "D:\\SteamLibrary\\steamapps\\common\\RimWorld\\Mods\\CJ E-800\\Source\\CJTerminator\\CJTerminator\\Mote_TerminatorLightning.cs",
+              "RelativeToolTip": "CJTerminator\\Mote_TerminatorLightning.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAABBwCsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T11:30:03.191Z"
             },
             {
               "$type": "Document",
@@ -271,8 +269,7 @@
               "RelativeToolTip": "CJTerminator\\Verb_CastAbilityEquipWeapon.cs",
               "ViewState": "AgIAACQAAAAAAAAAAAAAAFMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T09:08:54.608Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T09:08:54.608Z"
             },
             {
               "$type": "Document",
