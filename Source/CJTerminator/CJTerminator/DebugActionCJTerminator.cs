@@ -13,24 +13,6 @@ namespace CJTerminator
 {
     public static class DebugActionCJTerminator
     {
-        [DebugAction("CJTerminator", "", false, false, false, false, 0, false, allowedGameStates = AllowedGameStates.PlayingOnMap, displayPriority = 1000)]
-        public static DebugActionNode SpawnTerminator()
-        {
-
-            PawnKindDef localKindDef = CJTerminatorDefOf.Mech_CJTerminator;
-            var action = new DebugActionNode(localKindDef.defName, DebugActionType.ToolMap, null, null)
-            {
-                category = DebugToolsSpawning.GetCategoryForPawnKind(localKindDef),
-                action = delegate ()
-                {
-                    Faction faction = FactionUtility.DefaultFactionFrom(localKindDef.defaultFactionType);
-                    Pawn pawn = PawnGenerator.GeneratePawn(localKindDef, faction);
-                    GenSpawn.Spawn(pawn, UI.MouseCell(), Find.CurrentMap, WipeMode.Vanish);
-                }
-            };
-
-            return action;
-        }
 
         [DebugAction("CJTerminator", null, false, false, false, false, 0, false, actionType = DebugActionType.ToolMapForPawns, allowedGameStates = AllowedGameStates.PlayingOnMap)]
         public static void DamageTerminatorBodyByFifty(Pawn p)
@@ -71,23 +53,22 @@ namespace CJTerminator
         [DebugAction("CJTerminator", null, false, false, false, false, 0, false, actionType = DebugActionType.ToolMapForPawns, allowedGameStates = AllowedGameStates.PlayingOnMap)]
         public static void SpawnTerminatorProtectingPawn(Pawn p)
         {
-
-            PawnKindDef localKindDef = CJTerminatorDefOf.Mech_CJTerminator;
-            if (p.mechanitor != null && p.mechanitor.TotalBandwidth - p.mechanitor.UsedBandwidth >= 3)
-            {
-                Faction faction = FactionUtility.DefaultFactionFrom(FactionDefOf.PlayerColony);
-                Pawn terminator = PawnGenerator.GeneratePawn(localKindDef, faction);
-                Pawn overseer = terminator.GetOverseer();
-                overseer?.relations.RemoveDirectRelation(PawnRelationDefOf.Overseer, terminator);
-                p.relations.AddDirectRelation(PawnRelationDefOf.Overseer, terminator);
-                GenSpawn.Spawn(terminator, UI.MouseCell(), Find.CurrentMap, WipeMode.Vanish);
-            }
-
-
-
-
+            Find.CurrentMap.GetComponent<CJTerminatorMapEventHandler>().AppendEvent(CJTerminatorUtil.SpawnTerminatorEvent(p.Map, p.Position, p));
         }
 
+
+        [DebugAction("CJTerminator", null, false, false, false, false, 0, false, actionType = DebugActionType.ToolMap, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+        public static void SpawnTerminatorEffect()
+        {
+            IntVec3 cell = UI.MouseCell();
+            Map m = Find.CurrentMap;
+            Effecter e = CJTerminatorDefOf.TerminatorApears.Spawn(cell, m);
+            TargetInfo currentTargetInfo = new TargetInfo(cell, m);
+            IntVec3 rndOffset = new IntVec3(new Vector2(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f)));
+            TargetInfo nextTargetInfo = new TargetInfo(cell + rndOffset, m);
+            e.Trigger(currentTargetInfo, nextTargetInfo);
+
+        }
 
     }
 }

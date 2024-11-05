@@ -13,5 +13,8 @@ namespace CJTerminator
     {
         public static PawnKindDef Mech_CJTerminator;
         public static SoundDef PickUpWeapon1;
+        public static SoundDef T800Apears;
+
+        public static EffecterDef TerminatorApears;
     }
 }

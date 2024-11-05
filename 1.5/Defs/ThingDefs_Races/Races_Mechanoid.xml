@@ -6,12 +6,7 @@
   <ThingDef ParentName="BaseMechanoid">
     <defName>Mech_CJTerminator</defName>
     <label>T-800</label>
-<<<<<<< HEAD
-    <description>An ancient, AI designed armored android, originally constructed to infiltrate and
-      exterminate humans.</description>
-=======
     <description>An ancient, AI designed armored android, originally constructed to infiltrate and exterminate humans.</description>
->>>>>>> b7ae53d3f984724bd90b756b707bc250408fa90b
     <statBases>
       <MoveSpeed>3.4</MoveSpeed>
       <ArmorRating_Blunt>1.50</ArmorRating_Blunt>
@@ -75,21 +70,13 @@
         </li>
       </lifeStageAges>
       <body>Lancer</body>
-<<<<<<< HEAD
-      <baseHealthScale>5</baseHealthScale>
-=======
       <baseHealthScale>4</baseHealthScale>
->>>>>>> b7ae53d3f984724bd90b756b707bc250408fa90b
       <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Generic</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
     </race>
     <butcherProducts>
-<<<<<<< HEAD
-      <Steel>15</Steel>
-=======
       <SkynetCPUBasic>1</SkynetCPUBasic>
->>>>>>> b7ae53d3f984724bd90b756b707bc250408fa90b
     </butcherProducts>
   </ThingDef>
 

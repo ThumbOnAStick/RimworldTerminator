@@ -55,13 +55,10 @@ namespace CJTerminator
             else if (p.Rotation == Rot4.West)
                 g.Draw(p.DrawPos + eyeOffset2, p.Rotation, p);
 
-
         }
 
         public static Graphic GraphicForEyeGlow(Pawn pawn)
         {
-
-
             return GraphicDatabase.Get<Graphic_Single>(EyeGlowPath, ShaderDatabase.MoteGlow, BionicSkinDrawSize(pawn) * 0.1f, Color.red, Color.red);
         }
 
@@ -90,6 +87,13 @@ namespace CJTerminator
         {
             return p.kindDef.lifeStages[0].bodyGraphicData.drawSize;
         }
+
+        #region Events
+        public static CJTerminatorEvent_SpawnTerminator SpawnTerminatorEvent(Map map, IntVec3 Loc, Pawn p)
+        {
+            return new CJTerminatorEvent_SpawnTerminator(map, Loc, p);
+        }
+        #endregion
 
         static readonly Vector3 eyeOffset1 = new Vector3(0.18f, 0, 0.35f);
         static readonly Vector3 eyeOffset2 = new Vector3(-0.27f, 0, 0.4f);
