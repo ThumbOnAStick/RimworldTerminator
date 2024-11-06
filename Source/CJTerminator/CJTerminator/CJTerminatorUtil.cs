@@ -1,4 +1,5 @@
-﻿using RimWorld;
+﻿using CJTerminator.Events;
+using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,13 +32,13 @@ namespace CJTerminator
         {
             float angle = p.Drawer.renderer.BodyAngle(PawnRenderFlags.DrawNow);
             Graphic g = GraphicForBionicSkin(p);
-            if (p.Dead)
+            if (p.Dead || p.Downed)
             {
-                g.Draw(p.DrawPos, p.Rotation, p, angle);
+                return;
             }
             else
             {
-                g.Draw(p.DrawPos, p.Rotation, p);
+                g.Draw(p.DrawPos, p.Rotation, p, p.Drawer.renderer.BodyAngle(PawnRenderFlags.None));
 
             }
         }
@@ -92,6 +93,18 @@ namespace CJTerminator
         public static CJTerminatorEvent_SpawnTerminator SpawnTerminatorEvent(Map map, IntVec3 Loc, Pawn p)
         {
             return new CJTerminatorEvent_SpawnTerminator(map, Loc, p);
+        }
+        public static CJTerminatorEvent_SpawnTerminatorHostile SpawnTerminatorEventHostile(Map map)
+        {
+            return new CJTerminatorEvent_SpawnTerminatorHostile(map);
+        }
+        public static CJTerminatorEvent_Possitive SpawnTerminatorEventPossitive(Map map)
+        {
+            return new CJTerminatorEvent_Possitive(map);
+        }
+        public static CJTerminatorEvent_Negative SpawnTerminatorEventNegative(Map map)
+        {
+            return new CJTerminatorEvent_Negative(map);
         }
         #endregion
 

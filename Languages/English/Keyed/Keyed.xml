@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<!-- Settings-->
+    <Terminators>Terminators</Terminators>    
+    <eventFrequency>event frequencey: {0} quadrum per event</eventFrequency>
+    <minFireDayNegative>min fire day for negative event: {0}</minFireDayNegative>
+    <minFireDayPossitive>min fire day for possitive event: {0}</minFireDayPossitive>
+    <isPossitiveEnabled>enable possitive event</isPossitiveEnabled>
+    <isNegativeEnabled>enable negative event</isNegativeEnabled>
+    <!-- EventDescriptions -->
+    <TerminatorNegative.Label>negative</TerminatorNegative.Label>
+    <TerminatorNegative.Desc>something negative</TerminatorNegative.Desc>
+
+    <TerminatorPossitive.Label>possitive</TerminatorPossitive.Label>
+    <TerminatorPossitive.Desc>something possitive</TerminatorPossitive.Desc>
+</LanguageData>

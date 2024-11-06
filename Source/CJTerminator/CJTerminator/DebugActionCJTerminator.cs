@@ -56,6 +56,12 @@ namespace CJTerminator
             Find.CurrentMap.GetComponent<CJTerminatorMapEventHandler>().AppendEvent(CJTerminatorUtil.SpawnTerminatorEvent(p.Map, p.Position, p));
         }
 
+        [DebugAction("CJTerminator", null, false, false, false, false, 0, false, actionType = DebugActionType.ToolMap, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+        public static void SpawnTerminatorKillingColonist()
+        {
+            Find.CurrentMap.GetComponent<CJTerminatorMapEventHandler>().AppendEvent(CJTerminatorUtil.SpawnTerminatorEventHostile(Find.CurrentMap));
+        }
+
 
         [DebugAction("CJTerminator", null, false, false, false, false, 0, false, actionType = DebugActionType.ToolMap, allowedGameStates = AllowedGameStates.PlayingOnMap)]
         public static void SpawnTerminatorEffect()

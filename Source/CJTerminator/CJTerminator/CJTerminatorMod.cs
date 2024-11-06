@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 using Verse;
 
 namespace CJTerminator
@@ -14,7 +15,24 @@ namespace CJTerminator
         {
             Harmony harmony = new Harmony(content.PackageId);
             harmony.PatchAll();
-            Log.Message("CJTerminator: Successfully initiated");
+            settings = GetSettings<TerminatorModSettings>();
         }
+
+        public override void DoSettingsWindowContents(Rect inRect)
+        {
+            base.DoSettingsWindowContents(inRect);
+            GetSettings<TerminatorModSettings>().DoWindowsContent(inRect);
+
+        }
+
+        public override string SettingsCategory()
+        {
+            return "Terminators".Translate();
+        }
+
+        public static TerminatorModSettings settings;
+
+
+
     }
 }

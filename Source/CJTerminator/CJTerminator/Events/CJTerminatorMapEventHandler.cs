@@ -12,6 +12,8 @@ namespace CJTerminator
     {
         public CJTerminatorMapEventHandler(Map map) : base(map)
         {
+            this.AppendEvent(CJTerminatorUtil.SpawnTerminatorEventPossitive(map));
+            this.AppendEvent(CJTerminatorUtil.SpawnTerminatorEventNegative(map));
 
         }
 
@@ -19,13 +21,14 @@ namespace CJTerminator
         {
             base.MapComponentTick();
             int ticksGame = Find.TickManager.TicksGame;
-            foreach (CJTerminatorMapEvent e in events)
+            for(int i = 0; i< events.Count; i++)
             {
+                CJTerminatorMapEvent e = events[i]; 
                 e.EventTick(ticksGame);
                 if(e.ShouldEventBeRemoved(ticksGame))
                 {
                     events.Remove(e);
-                    break;
+                    return;
                 }
             }
         }
@@ -36,7 +39,7 @@ namespace CJTerminator
             Scribe_Collections.Look(ref events, "TerminatorMapEvents");
             foreach (CJTerminatorMapEvent e in events)
             {
-                e.ExposeData(); 
+                e.ExposeData();
 
             }
         }
@@ -44,10 +47,15 @@ namespace CJTerminator
         public override void MapGenerated()
         {
             base.MapGenerated();
+
         }
 
         public void AppendEvent(CJTerminatorMapEvent newEvent)
         {
+            if(this.events.Any(x => x.GetType() == newEvent.GetType()))
+            {
+                return;
+            }
             events.Add(newEvent);
             newEvent.SetLastFireTick(Find.TickManager.TicksGame);
             newEvent.PostAppend();

@@ -12,9 +12,8 @@ namespace CJTerminator
 {
     public class CJTerminatorEvent_SpawnTerminator : CJTerminatorMapEvent
     {
-        public CJTerminatorEvent_SpawnTerminator(Map eventMap, IntVec3 targetCell, Pawn p)
+        public CJTerminatorEvent_SpawnTerminator(Map eventMap, IntVec3 targetCell, Pawn p) : base(eventMap)
         {
-            this.eventMap = eventMap;
             this.targetCell = targetCell;
             this.newOverseer = p;
         }
@@ -27,7 +26,7 @@ namespace CJTerminator
                 this.FireEvent();
                 fired = true;
             }
-            
+
         }
 
         public override void PostAppend()
@@ -44,7 +43,6 @@ namespace CJTerminator
         {
             base.ExposeData();
             Scribe_Values.Look(ref fired, "fired");
-            Scribe_References.Look(ref eventMap, "eventMap");
             Scribe_Values.Look(ref targetCell, "targetCell");
             Scribe_References.Look(ref newOverseer, "newOverseer");
 
@@ -66,7 +64,6 @@ namespace CJTerminator
                 GenSpawn.Spawn(terminator, targetCell, Find.CurrentMap, WipeMode.Vanish);
                 CJTerminatorDefOf.T800Apears.PlayOneShotOnCamera();
             }
-
         }
 
         public override bool ShouldEventBeRemoved(int ticksGame)
@@ -78,7 +75,6 @@ namespace CJTerminator
 
         private bool fired;
         private readonly int delay = 250;
-        private Map eventMap;
         private IntVec3 targetCell;
         private Pawn newOverseer;
     }
