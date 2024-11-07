@@ -8,7 +8,34 @@
 	  <li>1.5</li>
    </supportedVersions>
    
-   <description>Terminators!</description>
+   <description>CrackaJack and Thumbstick proudly present: 
+   Terminators. 
+   This is a loveletter to the old killing machine.
+   With this mod we introduce the iconic T800 and T880 terminator models and two style fitting weapons .
+   As a pretty unique feature both change appearance to reflect their state of damage and also have custom wounds, as shown in the pictures. 
+   In other words they visibly lose chunks of flesh exposing inner machinery- i had a lot of fun drawing this, hehe. 
+   Terminator raids and help events can be disabled and configured.
+   Skynet CPU cores are rare quest rewards, needed for gestation.
+   
+   -The fearsome model T800 is a "mechanoid", requiring a mechanitor. 
+   Capable of most work and with an ability to equip any weapon like a human can. Due to their advanced autonomous ai they dont require any bandwidth to control.
+   Slow but sturdy, fine marksmen.
+   All of them are jacked and wear sunglasses and a leather coat. The perfect disguised mechanical bodyguard, if you can get one, or major threat to your well beeing.
+   
+   -T880 are "human", its a unique xenotype. 
+   They are slow in movement and reaction, but as tough as you´d expect and require nothing but nuclear fuel cells on a rare but regular basis. 
+   craft these from uranium at the machining table.
+   T880 are stone cold killers that can´t feel pain and will only be stopped by major structure damage.
+   Some rare cases have infiltrated or joined other cultures, claiming to have decided against following skynet directives.
+   
+   -Skynet5A2 rifle: An expensive and futuristic machine gun, spitting a lot of lead.
+   
+   -Colt1911: Custom longslide version with a laser on top, like in the first movie.
+   
+   Credits: 
+   Thumbstick, C# programming;
+   CrackaJack, art and XML.
+   Special thanks: VE crew for their framework. Arnold for beeing big. aRandomKiwi for ATTX, we relight the torch, man.</description>
    <modDependencies>
 	<li>
 		<packageId>brrainz.harmony</packageId>

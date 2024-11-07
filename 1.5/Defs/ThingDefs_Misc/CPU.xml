@@ -6,7 +6,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>SkynetCPUBasic</defName>
 	<label>antique CPU module</label>
-	<description>A T800 CPU module.</description>
+	<description>A T800 CPU module. The brain of a killing machine.</description>
 		<graphicData>
 			<texPath>Terminator/Other/cj_cpu1</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -42,7 +42,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>SkynetCPUAdvanced</defName>
 	<label>advanced antique CPU module</label>
-	<description>A T880 CPU module.</description>
+	<description>A T880 CPU module. The brain of an advanced killing machine.</description>
 		<graphicData>
 			<texPath>Terminator/Other/cj_cpu2</texPath>
 			<graphicClass>Graphic_Single</graphicClass>

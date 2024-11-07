@@ -41,7 +41,7 @@
       <displayPriority>1700</displayPriority>
     </recipeMaker>
     <costList>
-      <Uranium>5</Uranium>
+      <Uranium>20</Uranium>
     </costList>
     <comps>
       <li Class="CompProperties_Drug">
@@ -91,7 +91,7 @@
   <HediffDef ParentName="AddictionBase">
     <defName>NuclearPowered</defName>
     <label>powercell need</label>
-    <description>Mechanical endoskeleton in the body. Reactor requires regular recharging with nuclear fuel cells, or the CPU will melt down.</description>
+    <description>The inner reactor requires regular recharging with nuclear fuel cells, or the CPU will melt down.</description>
     <hediffClass>Hediff_Addiction</hediffClass>
     <causesNeed>Chemical_Powercell</causesNeed>
     <everCurableByItem>false</everCurableByItem>

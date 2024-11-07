@@ -1,0 +1,22 @@
+  <Defs>  
+    <EffecterDef>
+    <defName>TerminatorApears</defName>
+    <children>
+      <li>
+        <moteDef>Mote_TerminatorLightning</moteDef>
+        <subEffecterClass>CJTerminator.SubEffecterTerminatorLightning</subEffecterClass>
+        <scale>0.5~0.7</scale>
+        <positionLerpFactor>0.35</positionLerpFactor>
+        <positionRadius>0.2</positionRadius>
+      </li>
+      <li>
+        <moteDef>Mote_TerminatorSphere</moteDef>
+        <subEffecterClass>CJTerminator.SubEffecterTerminatorShpere</subEffecterClass>
+        <scale>1~1.3</scale>
+        <positionLerpFactor>0</positionLerpFactor>
+        <positionRadius>0.2</positionRadius>
+      </li>
+    </children>
+  </EffecterDef>
+  <maintainTicks>5</maintainTicks>
+</Defs>

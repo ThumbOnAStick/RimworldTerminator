@@ -1,4 +1,5 @@
-﻿using RimWorld;
+﻿using CJTerminator.Events;
+using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,13 +32,13 @@ namespace CJTerminator
         {
             float angle = p.Drawer.renderer.BodyAngle(PawnRenderFlags.DrawNow);
             Graphic g = GraphicForBionicSkin(p);
-            if (p.Dead)
+            if (p.Dead || p.Downed)
             {
-                g.Draw(p.DrawPos, p.Rotation, p, angle);
+                return;
             }
             else
             {
-                g.Draw(p.DrawPos, p.Rotation, p);
+                g.Draw(p.DrawPos, p.Rotation, p, p.Drawer.renderer.BodyAngle(PawnRenderFlags.None));
 
             }
         }
@@ -55,13 +56,10 @@ namespace CJTerminator
             else if (p.Rotation == Rot4.West)
                 g.Draw(p.DrawPos + eyeOffset2, p.Rotation, p);
 
-
         }
 
         public static Graphic GraphicForEyeGlow(Pawn pawn)
         {
-
-
             return GraphicDatabase.Get<Graphic_Single>(EyeGlowPath, ShaderDatabase.MoteGlow, BionicSkinDrawSize(pawn) * 0.1f, Color.red, Color.red);
         }
 
@@ -90,6 +88,25 @@ namespace CJTerminator
         {
             return p.kindDef.lifeStages[0].bodyGraphicData.drawSize;
         }
+
+        #region Events
+        public static CJTerminatorEvent_SpawnTerminator SpawnTerminatorEvent(Map map, IntVec3 Loc, Pawn p)
+        {
+            return new CJTerminatorEvent_SpawnTerminator(map, Loc, p);
+        }
+        public static CJTerminatorEvent_SpawnTerminatorHostile SpawnTerminatorEventHostile(Map map)
+        {
+            return new CJTerminatorEvent_SpawnTerminatorHostile(map);
+        }
+        public static CJTerminatorEvent_Possitive SpawnTerminatorEventPossitive(Map map)
+        {
+            return new CJTerminatorEvent_Possitive(map);
+        }
+        public static CJTerminatorEvent_Negative SpawnTerminatorEventNegative(Map map)
+        {
+            return new CJTerminatorEvent_Negative(map);
+        }
+        #endregion
 
         static readonly Vector3 eyeOffset1 = new Vector3(0.18f, 0, 0.35f);
         static readonly Vector3 eyeOffset2 = new Vector3(-0.27f, 0, 0.4f);
