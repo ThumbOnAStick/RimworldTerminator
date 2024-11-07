@@ -17,7 +17,10 @@ namespace CJTerminator
             this.targetCell = targetCell;
             this.newOverseer = p;
         }
+        public CJTerminatorEvent_SpawnTerminator()
+        {
 
+        }
         public override void EventTick(int ticksGame)
         {
             if (ticksGame > delay + this.lastFireTick)

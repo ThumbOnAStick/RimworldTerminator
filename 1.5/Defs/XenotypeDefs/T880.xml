@@ -136,6 +136,20 @@
 		</statFactors>
 		<painFactor>0</painFactor>
 		<selectionWeight>0</selectionWeight>
+		<renderNodeProperties>
+			<li>
+				<debugLabel>CyborgWound_Head</debugLabel>
+				<nodeClass>PawnRenderNode_CyborgWound_Head</nodeClass>
+				<workerClass>PawnRenderNodeWorker_CyborgWound_Head</workerClass>
+				<baseLayer>5</baseLayer>
+				<rotDrawMode>Fresh, Rotting</rotDrawMode>
+				<parentTagDef>Head</parentTagDef>
+			</li>
+
+			<li>
+				<!-- cyborg wound body -->
+			</li>
+		</renderNodeProperties>
 	</GeneDef>
 
 

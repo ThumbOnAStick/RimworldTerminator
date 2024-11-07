@@ -12,8 +12,15 @@ namespace CJTerminator.Events
     {
         public CJTerminatorEvent_Negative(Map m) : base(m)
         {
+           
+        }
+
+        public CJTerminatorEvent_Negative()
+        {
 
         }
+
+
 
         public override void EventTick(int ticksGame)
         {
@@ -45,16 +52,16 @@ namespace CJTerminator.Events
         {
 
         }
+        public override void ExposeData()
+        {
+            Scribe_References.Look(ref eventMap, "eventMapNegative");
+        }
 
         public override bool ShouldEventBeRemoved(int ticksGame)
         {
             return false;
         }
 
-        public override void ExposeData()
-        {
-            base.ExposeData();
 
-        }
     }
 }

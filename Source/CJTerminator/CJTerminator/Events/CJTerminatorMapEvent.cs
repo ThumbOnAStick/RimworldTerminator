@@ -10,6 +10,7 @@ namespace CJTerminator
     public abstract class CJTerminatorMapEvent : IExposable
     {
         public CJTerminatorMapEvent(Map m) { this.eventMap = m; }
+        public CJTerminatorMapEvent() { }
         public abstract void FireEvent();
         public abstract void EventTick(int ticksGame);
         public abstract bool ShouldEventBeRemoved(int ticksGame);

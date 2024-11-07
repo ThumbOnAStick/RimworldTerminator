@@ -10,7 +10,9 @@ namespace CJTerminator
 {
     public class CJTerminatorEvent_Possitive : CJTerminatorMapEvent
     {
-        public CJTerminatorEvent_Possitive(Map m) : base(m)
+
+        public CJTerminatorEvent_Possitive(Map m) : base(m) { }
+        public CJTerminatorEvent_Possitive()
         {
 
         }
@@ -51,17 +53,16 @@ namespace CJTerminator
         {
 
         }
+        public override void ExposeData()
+        {
+            Scribe_References.Look(ref eventMap, "eventMapPossitive");
+        }
 
         public override bool ShouldEventBeRemoved(int ticksGame)
         {
             return false;
         }
 
-        public override void ExposeData()
-        {
-            base.ExposeData();
-
-        }
 
     }
 }

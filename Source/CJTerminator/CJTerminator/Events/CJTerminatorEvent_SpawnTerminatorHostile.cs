@@ -18,7 +18,10 @@ namespace CJTerminator.Events
         {
 
         }
+        public CJTerminatorEvent_SpawnTerminatorHostile()
+        {
 
+        }
         public override void EventTick(int ticksGame)
         {
             if (ticksGame > delay + this.lastFireTick)
