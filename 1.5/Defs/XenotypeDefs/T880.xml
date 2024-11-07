@@ -132,7 +132,7 @@
 		<painFactor>0</painFactor>
 		<selectionWeight>0</selectionWeight>
 		<renderNodeProperties>
-			<li>
+			<!-- <li>
 				<debugLabel>CyborgWound_Head</debugLabel>
 				<nodeClass>PawnRenderNode_CyborgWound_Head</nodeClass>
 				<workerClass>PawnRenderNodeWorker_CyborgWound_Head</workerClass>
@@ -142,8 +142,7 @@
 			</li>
 
 			<li>
-				<!-- cyborg wound body -->
-			</li>
+			</li> -->
 		</renderNodeProperties>
 	</GeneDef>
 
