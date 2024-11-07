@@ -6,11 +6,11 @@
   <ThingDef ParentName="BaseMechanoid">
     <defName>Mech_CJTerminator</defName>
     <label>T-800</label>
-    <description>An ancient, AI designed armored android, originally constructed to infiltrate and exterminate humans.</description>
+    <description>An unfeeling hybrid of flesh and machine designed to infiltrate, seek and destroy. The model 800 terminators can analyze and use any firearm, withstand a lot of damage and are capable of handling complex tasks.</description>
     <statBases>
       <MoveSpeed>3.4</MoveSpeed>
-      <ArmorRating_Blunt>1.50</ArmorRating_Blunt>
-      <ArmorRating_Sharp>1.50</ArmorRating_Sharp>
+      <ArmorRating_Blunt>1.30</ArmorRating_Blunt>
+      <ArmorRating_Sharp>1.30</ArmorRating_Sharp>
       <PsychicSensitivity>0.25</PsychicSensitivity>
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">0</BandwidthCost>
       <MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.2</MechEnergyLossPerHP>
@@ -21,7 +21,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>10.0</power>
+        <power>20.0</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
         <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
@@ -31,7 +31,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>10.0</power>
+        <power>20.0</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
         <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
@@ -41,7 +41,7 @@
         <capacities>
           <li>Blunt</li>
         </capacities>
-        <power>8.5</power>
+        <power>18.5</power>
         <cooldownTime>2</cooldownTime>
         <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
         <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
@@ -74,6 +74,14 @@
       <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Generic</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+	  <mechEnabledWorkTypes>
+        <li>Construction</li>
+        <li>Mining</li>
+        <li>Hauling</li>
+		<li>Cleaning</li>
+		<li>Crafting</li>
+		<li>Growing</li>
+      </mechEnabledWorkTypes>
     </race>
     <butcherProducts>
       <SkynetCPUBasic>1</SkynetCPUBasic>

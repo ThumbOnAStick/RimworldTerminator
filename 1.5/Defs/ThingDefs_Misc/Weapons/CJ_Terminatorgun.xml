@@ -23,8 +23,8 @@
 		<costList>
           <Steel>50</Steel>
           <Uranium>20</Uranium>
-          <ComponentIndustrial>4</ComponentIndustrial>
-		  <ComponentSpacer>2</ComponentSpacer>
+          <ComponentIndustrial>8</ComponentIndustrial>
+		  <ComponentSpacer>4</ComponentSpacer>
         </costList>
         <recipeMaker>
 		<researchPrerequisite>MultibarrelWeapons</researchPrerequisite>
@@ -51,7 +51,7 @@
                 <range>35.9</range>
                 <burstShotCount>8</burstShotCount>
                 <ticksBetweenBurstShots>3</ticksBetweenBurstShots>
-                <soundCast>Shot_Minigun</soundCast>
+                <soundCast>BigMGShoot</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>12</muzzleFlashScale>
             </li>

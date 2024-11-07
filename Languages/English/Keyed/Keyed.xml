@@ -8,9 +8,9 @@
     <isPossitiveEnabled>enable possitive event</isPossitiveEnabled>
     <isNegativeEnabled>enable negative event</isNegativeEnabled>
     <!-- EventDescriptions -->
-    <TerminatorNegative.Label>negative</TerminatorNegative.Label>
-    <TerminatorNegative.Desc>something negative</TerminatorNegative.Desc>
+    <TerminatorNegative.Label>Terminator Assault</TerminatorNegative.Label>
+    <TerminatorNegative.Desc>Your colonists have been targeted by skynet, an AI from a possible future, capable of sending objects back in time. It regards them as a possible obstacle to the event of its creation, and has sent murderous machines to take them out.</TerminatorNegative.Desc>
 
-    <TerminatorPossitive.Label>possitive</TerminatorPossitive.Label>
-    <TerminatorPossitive.Desc>something possitive</TerminatorPossitive.Desc>
+    <TerminatorPossitive.Label>Terminator Bodyguard</TerminatorPossitive.Label>
+    <TerminatorPossitive.Desc>Rebels from a possible future have hacked a temporal relocator, and used it to send a reprogrammed T800 back in time to aid your mechanitor in fulfilling their destiny. They havent been more specific.</TerminatorPossitive.Desc>
 </LanguageData>
