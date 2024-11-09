@@ -6,16 +6,13 @@
       <debugLabel>Root</debugLabel>
       <tagDef>Root</tagDef>
       <children>
-
         <li>
-          <debugLabel>Body</debugLabel>
+          <debugLabel>BionicSkin</debugLabel>
           <tagDef>Body</tagDef>
           <nodeClass>PawnRenderNode_AnimalPart</nodeClass>
-          <useRottenColor>true</useRottenColor>
-          <baseLayer>-10</baseLayer>
+          <workerClass>CJTerminator.PawnRenderNodeWorker_BionicSkin</workerClass>
+          <useRottenColor>false</useRottenColor>
           <children>
-
-
             <li>
               <debugLabel>Wounds</debugLabel>
               <nodeClass>PawnRenderNode_AnimalPart</nodeClass>
@@ -33,16 +30,6 @@
               <baseLayer>5</baseLayer>
             </li>
           </children>
-        </li>
-      
-        
-        <li Class="PawnRenderNodeProperties_Overlay">
-          <debugLabel>Wounds</debugLabel>
-          <nodeClass>PawnRenderNode_AnimalPart</nodeClass>
-          <workerClass>CJTerminator.PawnRenderNodeWorker_BionicSkin</workerClass>
-          <overlayLayer>Body</overlayLayer>
-          <useGraphic>false</useGraphic>
-          <baseLayer>31</baseLayer>
         </li>
 
         <li Class="PawnRenderNodeProperties_Carried">

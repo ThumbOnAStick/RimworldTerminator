@@ -99,7 +99,7 @@
           <texPath>Terminator/Mech/CJTerminatorOLD</texPath>
           <shaderType>Cutout</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.6</drawSize>
+          <drawSize>1.9</drawSize>
           <shadowData>
             <volume>(0.6, 0.8, 0.6)</volume>
           </shadowData>
@@ -110,7 +110,7 @@
           <texPath>Terminator/Mech/CJTerminatorOLD</texPath>
           <shaderType>Cutout</shaderType>
           <graphicClass>Graphic_Multi</graphicClass>
-          <drawSize>1.6</drawSize>
+          <drawSize>1.9</drawSize>
           <shadowData>
             <volume>(0.6, 0.8, 0.6)</volume>
           </shadowData>
