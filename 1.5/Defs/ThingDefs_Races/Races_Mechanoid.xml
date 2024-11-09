@@ -81,6 +81,8 @@
 		<li>Cleaning</li>
 		<li>Crafting</li>
 		<li>Growing</li>
+		<li>PlantCutting</li>
+		<li>Firefighter</li>
       </mechEnabledWorkTypes>
     </race>
     <butcherProducts>
