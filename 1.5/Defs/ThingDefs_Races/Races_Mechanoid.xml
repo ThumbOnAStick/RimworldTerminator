@@ -133,6 +133,9 @@
       <li>IndustrialGunAdvanced</li>
       <li>GunHeavy</li>
       <li>Minigun</li>
+	  <li MayRequire="JangoDsoul.Skynet">WM-25_Gun</li>
+	  <li MayRequire="JangoDsoul.Skynet">ChargedMinigun</li>
+	  <li MayRequire="JangoDsoul.Skynet">Gun_Flamethrower</li>
     </weaponTags>
   </PawnKindDef>
 
