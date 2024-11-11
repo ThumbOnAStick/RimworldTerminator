@@ -27,6 +27,8 @@
     </requiredWorkTags>
     <disallowedTraits>
       <li>Brawler</li>
+	  <li>Greedy</li>
+	  <li>Wimp</li>
     </disallowedTraits>
   </PawnKindDef>
   
