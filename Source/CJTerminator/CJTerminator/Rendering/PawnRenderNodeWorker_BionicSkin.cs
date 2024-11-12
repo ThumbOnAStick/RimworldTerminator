@@ -71,9 +71,9 @@ namespace CJTerminator
         {
             base.PostDraw(node, parms, mesh, matrix);
 
-            CJTerminatorUtil.DrawBionicSkin(parms.pawn, node, parms);
+            TerminatorDraw.DrawBionicSkin(parms.pawn, node, parms);
             if (parms.pawn.Drafted)
-                CJTerminatorUtil.DrawEyeGlow(parms.pawn, parms);
+                TerminatorDraw.DrawEyeGlow(parms.pawn, parms);
         }
 
         public override void AppendDrawRequests(PawnRenderNode node, PawnDrawParms parms, List<PawnGraphicDrawRequest> requests)
@@ -84,11 +84,6 @@ namespace CJTerminator
         public override Vector3 ScaleFor(PawnRenderNode n, PawnDrawParms parms)
         {
             return parms.pawn.DrawSize;
-        }
-
-        protected override Graphic GetGraphic(PawnRenderNode node, PawnDrawParms parms)
-        {
-            return CJTerminatorUtil.GraphicForBionicSkin(parms.pawn);
         }
 
 

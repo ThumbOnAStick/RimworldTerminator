@@ -43,7 +43,7 @@ namespace CJTerminator.Events
                 return;
             }
             
-            eventMap.GetComponent<CJTerminatorMapEventHandler>().AppendEvent(CJTerminatorUtil.SpawnTerminatorEventHostile(eventMap));
+            eventMap.GetComponent<CJTerminatorMapEventHandler>().AppendEvent(TerminatorUtil.SpawnTerminatorEventHostile(eventMap));
             Letter letter = LetterMaker.MakeLetter("TerminatorNegative.Label".Translate(), "TerminatorNegative.Desc".Translate(), LetterDefOf.ThreatBig);
             Find.LetterStack.ReceiveLetter(letter);
         }

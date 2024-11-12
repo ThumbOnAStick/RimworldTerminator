@@ -1,6 +1,4 @@
-﻿using CJTerminator.Events;
-using RimWorld;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,25 +8,9 @@ using Verse;
 
 namespace CJTerminator
 {
-    public static class CJTerminatorUtil
+    public static class TerminatorDraw
     {
-
-        public static float BodyPartHarmRatio(Pawn pawn, BodyPartRecord r)
-        {
-            float hitPoints = pawn.health.hediffSet.GetPartHealth(r);
-            float maxHitPoint = r.def.GetMaxHealth(pawn); ;
-            if (maxHitPoint == 0)
-                return 0;
-            return hitPoints / maxHitPoint;
-        }
-
-        public static BodyPartRecord GetRecordByName(Pawn pawn, string name)
-        {
-            BodyPartDef targetDef = DefDatabase<BodyPartDef>.GetNamed(name);
-            return pawn.health.hediffSet.GetBodyPartRecord(targetDef);
-        }
-
-        public static void DrawBionicSkin(Pawn p,PawnRenderNode node, PawnDrawParms parms)
+        public static void DrawBionicSkin(Pawn p, PawnRenderNode node, PawnDrawParms parms)
         {
             float angle = p.Drawer.renderer.BodyAngle(PawnRenderFlags.DrawNow);
             Graphic g = GraphicForBionicSkin(p);
@@ -66,10 +48,10 @@ namespace CJTerminator
 
         public static Graphic GraphicForBionicSkin(Pawn pawn)
         {
-            BodyPartRecord r = GetRecordByName(pawn, "MechanicalThorax");
+            BodyPartRecord r = TerminatorUtil.GetRecordByName(pawn, "MechanicalThorax");
             if (r == null)
                 Log.Error("CJTerminator: No MechanicalThorax part found!");
-            float ratio = BodyPartHarmRatio(pawn, r);
+            float ratio = TerminatorUtil.BodyPartHarmRatio(pawn, r);
 
             string path = SkinGoodMultiplePath;
             if (ratio < .5f)
@@ -89,27 +71,8 @@ namespace CJTerminator
             return p.kindDef.lifeStages[0].bodyGraphicData.drawSize;
         }
 
-        #region Events
-        public static CJTerminatorEvent_SpawnTerminator SpawnTerminatorEvent(Map map, IntVec3 Loc, Pawn p)
-        {
-            return new CJTerminatorEvent_SpawnTerminator(map, Loc, p);
-        }
-        public static CJTerminatorEvent_SpawnTerminatorHostile SpawnTerminatorEventHostile(Map map)
-        {
-            return new CJTerminatorEvent_SpawnTerminatorHostile(map);
-        }
-        public static CJTerminatorEvent_Possitive SpawnTerminatorEventPossitive(Map map)
-        {
-            return new CJTerminatorEvent_Possitive(map);
-        }
-        public static CJTerminatorEvent_Negative SpawnTerminatorEventNegative(Map map)
-        {
-            return new CJTerminatorEvent_Negative(map);
-        }
-        #endregion
-
-        static readonly Vector3 eyeOffset1 = new Vector3(0.18f, 0, 0.35f);
-        static readonly Vector3 eyeOffset2 = new Vector3(-0.27f, 0, 0.4f);
+        static readonly Vector3 eyeOffset1 = new Vector3(0.13f, 0, 0.38f);
+        static readonly Vector3 eyeOffset2 = new Vector3(-0.3f, 0, 0.45f);
 
         static readonly string EyeGlowPath = "Terminator/Mech/Dot";
         static readonly string SkinGoodMultiplePath = "Terminator/Mech/CJTerminator2";
