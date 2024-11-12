@@ -70,7 +70,7 @@
         </li>
       </lifeStageAges>
       <body>Lancer</body>
-      <baseHealthScale>4</baseHealthScale>
+      <baseHealthScale>2</baseHealthScale>
       <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Generic</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>

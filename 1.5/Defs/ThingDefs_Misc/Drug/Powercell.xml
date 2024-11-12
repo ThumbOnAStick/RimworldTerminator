@@ -5,6 +5,7 @@
     <defName>CJ_Powercell</defName>
     <label>nuclearcell</label>
     <description>A nuclear fuel cell. T880 use these to recharge their power.</description>
+	<tickerType>Normal</tickerType>
     <descriptionHyperlinks>
       <HediffDef>PowercellHigh</HediffDef>
       <HediffDef>NuclearPowered</HediffDef>
@@ -50,6 +51,16 @@
         <needLevelOffset>0.9</needLevelOffset>
         <listOrder>1010</listOrder>
       </li>
+	  <li Class="CompProperties_Explosive">
+        <explosiveRadius>3</explosiveRadius>
+        <explosiveDamageType>Bomb</explosiveDamageType>
+        <explosiveExpandPerStackcount>0.4</explosiveExpandPerStackcount>
+        <startWickOnDamageTaken>
+          <li>Flame</li>
+        </startWickOnDamageTaken>
+        <startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+        <wickTicks>70~150</wickTicks>
+      </li>
     </comps>
     <tradeTags>
       <li>ExoticMisc</li>
@@ -75,7 +86,7 @@
     <label>powercell</label>
     <addictionHediff>NuclearPowered</addictionHediff>
     <canBinge>false</canBinge>
-    <generateAddictionGenes>false</generateAddictionGenes>
+    <generateAddictionGenes>true</generateAddictionGenes>
   </ChemicalDef>
 
   <NeedDef ParentName="DrugAddictionNeedBase">

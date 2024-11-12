@@ -42,12 +42,76 @@
     <techHediffsTags>
       <li>Advanced</li>
     </techHediffsTags>
+    <weaponMoney>600~2800</weaponMoney>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>CJTerminatorgun</li>
+      <li>ShortShots</li>
+      <li>PumpShotgun</li>
+      <li>IndustrialGunAdvanced</li>
+      <li>GunHeavy</li>
+      <li>Minigun</li>
+	  <li MayRequire="JangoDsoul.Skynet">WM-25_Gun</li>
+	  <li MayRequire="JangoDsoul.Skynet">ChargedMinigun</li>
+	  <li MayRequire="JangoDsoul.Skynet">Gun_Flamethrower</li>
+    </weaponTags>
+    <apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelRequired Inherit="False">
+      <li>Apparel_Pants</li>
+    </apparelRequired>
+     </PawnKindDef>
+	 
+	 
+	 <PawnKindDef ParentName="T880Base">
+    <defName>T880Raider</defName>
+	<defaultFactionType>CJSkynet</defaultFactionType>
+    <invNutrition>0.5</invNutrition>
+    <invFoodDef>CJ_Powercell</invFoodDef>
+    <apparelMoney>500~700</apparelMoney>
+    <techHediffsChance>0.15</techHediffsChance>
+    <techHediffsMoney>0~1800</techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
     <weaponMoney>600~800</weaponMoney>
     <weaponTags>
       <li>SimpleGun</li>
       <li>CJTerminatorgun</li>
       <li>ShortShots</li>
       <li>PumpShotgun</li>
+      <li>IndustrialGunAdvanced</li>
+      <li>GunHeavy</li>
+      <li>Minigun</li>
+	  <li MayRequire="JangoDsoul.Skynet">WM-25_Gun</li>
+	  <li MayRequire="JangoDsoul.Skynet">ChargedMinigun</li>
+	  <li MayRequire="JangoDsoul.Skynet">Gun_Flamethrower</li>
+    </weaponTags>
+    <apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelRequired Inherit="False">
+      <li>Apparel_Pants</li>
+    </apparelRequired>
+     </PawnKindDef>
+	 
+	 <PawnKindDef ParentName="T880Base">
+    <defName>T880Leader</defName>
+	<defaultFactionType>CJSkynet</defaultFactionType>
+    <invNutrition>0.5</invNutrition>
+    <invFoodDef>CJ_Powercell</invFoodDef>
+    <apparelMoney>500~700</apparelMoney>
+    <techHediffsChance>0.15</techHediffsChance>
+    <techHediffsMoney>0~1800</techHediffsMoney>
+    <techHediffsTags>
+      <li>Spacer</li>
+    </techHediffsTags>
+    <weaponMoney>800~1200</weaponMoney>
+    <weaponTags>
+      <li>CJTerminatorgun</li>
       <li>IndustrialGunAdvanced</li>
       <li>GunHeavy</li>
       <li>Minigun</li>

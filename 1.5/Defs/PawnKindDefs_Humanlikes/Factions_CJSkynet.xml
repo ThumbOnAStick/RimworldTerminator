@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+    <FactionDef ParentName="FactionBase">
+    <defName>CJSkynet</defName>
+    <label>Skynet</label>
+    <description>Combat machines sent back in time to exterminate sentient life.</description>
+    <pawnSingular>Terminator</pawnSingular>
+    <pawnsPlural>Terminators</pawnsPlural>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+	<maxCountAtGameStart>1</maxCountAtGameStart>
+	<canSiege>true</canSiege>
+	<leaderTitle>skynet commander</leaderTitle>
+    <fixedName>Skynet</fixedName>
+    <factionIconPath>UI/Icons/Faction/CJHeadSymbol</factionIconPath>
+    <canStageAttacks>true</canStageAttacks>
+    <colorSpectrum>
+      <li>(0.78, 0.79, 0.71)</li>
+    </colorSpectrum>
+	<fixedLeaderKinds>
+      <li>T880Leader</li>
+    </fixedLeaderKinds>
+    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(300,  0)</li>
+        <li>(700,  1)</li>
+        <li>(1400, 1.8)</li>
+        <li>(2800, 2.2)</li>
+        <li>(4000, 2.6)</li>
+      </points>
+    </raidCommonalityFromPointsCurve>
+    <!--<maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(500, 100)</li>
+        <li>(1000, 150)</li>
+        <li>(2000, 250)</li>
+        <li>(2001, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>-->
+    <!--<raidLootMaker>MechanoidRaidLootMaker</raidLootMaker>
+    <raidLootValueFromPointsCurve>
+      <points>
+        <li>(35,     8)</li>
+        <li>(100,   60)</li>
+        <li>(1000, 250)</li>
+        <li>(2000, 400)</li>
+        <li>(4000, 500)</li>
+      </points>
+    </raidLootValueFromPointsCurve>-->
+    <humanlikeFaction>true</humanlikeFaction>
+    <hidden>true</hidden>
+    <autoFlee>false</autoFlee>
+    <canUseAvoidGrid>false</canUseAvoidGrid>
+    <techLevel>Industrial</techLevel>
+    <earliestRaidDays>30</earliestRaidDays>
+    <permanentEnemy>true</permanentEnemy>
+    <hostileToFactionlessHumanlikes>true</hostileToFactionlessHumanlikes>
+	<raidLootMaker>SkynetRaidLootMaker</raidLootMaker>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(400,200)</li>
+        <li>(900,300)</li>
+        <li>(100000,10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <!-- All types-->
+        <kindDef>Combat</kindDef>
+        <commonality>500</commonality>
+        <options>
+          <T880Raider>1</T880Raider>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>UI/Icons/Faction/CJHeadSymbol</settlementTexturePath>
+	<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+				</categories>
+				<commonality>0.5</commonality>
+			</li>
+			<li>
+				<categories>
+					<li>Offworld</li>
+				</categories>
+				<commonality>0.5</commonality>
+			</li>
+		</backstoryFilters>
+		<xenotypeSet>
+      <xenotypeChances>
+        <CJ_T880 MayRequire="Ludeon.RimWorld.Biotech">1</CJ_T880>
+      </xenotypeChances>
+    </xenotypeSet>
+    <allowedArrivalTemperatureRange>-100~200</allowedArrivalTemperatureRange>
+    <maxConfigurableAtWorldCreation>1</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>900</configurationListOrderPriority>
+	<disallowedRaidAgeRestrictions>
+      <li MayRequire="Ludeon.RimWorld.Biotech">Children</li>
+    </disallowedRaidAgeRestrictions>
+  </FactionDef>
+
+<ThingSetMakerDef>
+    <defName>SkynetRaidLootMaker</defName>
+    <root Class="ThingSetMaker_MarketValue">
+      <fixedParams>
+        <filter>
+          <thingDefs>
+            <li>Gold</li>
+            <li>Uranium</li>
+			<li>CJ_Powercell</li>
+          </thingDefs>
+        </filter>
+      </fixedParams>
+    </root>
+  </ThingSetMakerDef>
+	
+	
+</Defs>
