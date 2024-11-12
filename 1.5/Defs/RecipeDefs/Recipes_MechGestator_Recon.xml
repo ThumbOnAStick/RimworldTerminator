@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- 
+	<RecipeDef ParentName="LightMechanoidRecipe">
+    <defName>Recon</defName>
+    <label>gestate recon slugger</label>
+    <description>Gestate a recon mechanoid.</description>
+	<gestationCycles>1</gestationCycles>
+	<researchPrerequisite>StandardMechtech</researchPrerequisite>
+    <ingredients Inherit="False">
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>85</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>SubcoreBasic</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+	</ingredients>
+    <products>
+		<Mech_Recon>1</Mech_Recon>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Mech_Recon</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+	<RecipeDef ParentName="LightMechanoidRecipe">
+		<defName>ReconBlaster</defName>
+		<label>gestate recon blaster</label>
+		<description>Gestate a recon mechanoid.</description>
+		<gestationCycles>2</gestationCycles>
+		<researchPrerequisite>HighMechtech</researchPrerequisite>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>75</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SubcoreRegular</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Mech_ReconBlaster>1</Mech_ReconBlaster>
+		</products>
+		<descriptionHyperlinks>
+			<ThingDef>Mech_ReconBlaster</ThingDef>
+		</descriptionHyperlinks>
+	</RecipeDef>
+	
+	<RecipeDef ParentName="LightMechanoidRecipe">
+    <defName>Scout</defName>
+    <label>gestate scout stubber</label>
+    <description>Gestate a scout mechanoid.</description>
+	<gestationCycles>1</gestationCycles>
+	<researchPrerequisite>BasicMechtech</researchPrerequisite>
+    <ingredients Inherit="False">
+		<li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>65</count>
+		</li>
+		<li>
+			<filter>
+				<thingDefs>
+					<li>SubcoreBasic</li>
+				</thingDefs>
+			</filter>
+			<count>1</count>
+		</li>
+	</ingredients>
+    <products>
+		<Mech_Scout>1</Mech_Scout>
+    </products>
+    <descriptionHyperlinks>
+      <ThingDef>Mech_Scout</ThingDef>
+    </descriptionHyperlinks>
+  </RecipeDef>
+
+	<RecipeDef ParentName="LightMechanoidRecipe">
+		<defName>ScoutBlaster</defName>
+		<label>gestate scout blaster</label>
+		<description>Gestate a scout mechanoid.</description>
+		<gestationCycles>2</gestationCycles>
+		<researchPrerequisite>HighMechtech</researchPrerequisite>
+		<ingredients Inherit="False">
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Steel</li>
+					</thingDefs>
+				</filter>
+				<count>65</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Plasteel</li>
+					</thingDefs>
+				</filter>
+				<count>15</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>2</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>SubcoreRegular</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<products>
+			<Mech_ScoutBlaster>1</Mech_ScoutBlaster>
+		</products>
+		<descriptionHyperlinks>
+			<ThingDef>Mech_ScoutBlaster</ThingDef>
+		</descriptionHyperlinks>
+	</RecipeDef> -->
+
+</Defs>
