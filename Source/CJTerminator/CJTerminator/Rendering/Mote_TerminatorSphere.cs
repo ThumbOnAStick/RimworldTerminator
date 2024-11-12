@@ -28,7 +28,7 @@ namespace CJTerminator
         {
             if (!this.paused)
             {
-                this.exactPosition.y = altitude + this.yOffset;
+                this.exactPosition.y = altitude;
             }
             if (drawStarted)
             {

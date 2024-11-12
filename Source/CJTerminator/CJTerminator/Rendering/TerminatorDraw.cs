@@ -17,6 +17,7 @@ namespace CJTerminator
             if (p.Dead || p.Downed)
             {
                 return;
+
             }
             else
             {
@@ -58,10 +59,18 @@ namespace CJTerminator
             {
                 path = NoSkinMultiplePath;
             }
-            else if (ratio < .8f)
+            else if (ratio < .6f)
+            {
+                path = BarelyNoSkinPath;
+            }
+            else if (ratio < .7f)
+            {
+                path = SkinShatteredPath;
+            }else if(ratio < .8f)
             {
                 path = SkinBadMultiplePath;
             }
+
 
             return GraphicDatabase.Get<Graphic_Multi>(path, ShaderDatabase.CutoutSkinColorOverride, BionicSkinDrawSize(pawn), Color.white, Color.white, null);
         }
@@ -71,12 +80,14 @@ namespace CJTerminator
             return p.kindDef.lifeStages[0].bodyGraphicData.drawSize;
         }
 
-        static readonly Vector3 eyeOffset1 = new Vector3(0.13f, 0, 0.38f);
+        static readonly Vector3 eyeOffset1 = new Vector3(0.11f, 0, 0.38f);
         static readonly Vector3 eyeOffset2 = new Vector3(-0.3f, 0, 0.45f);
 
         static readonly string EyeGlowPath = "Terminator/Mech/Dot";
         static readonly string SkinGoodMultiplePath = "Terminator/Mech/CJTerminator2";
         static readonly string SkinBadMultiplePath = "Terminator/Mech/CJTerminator3";
-        static readonly string NoSkinMultiplePath = "Terminator/Mech/CJTerminator";
+        static readonly string SkinShatteredPath = "Terminator/Mech/CJTerminator4";
+        static readonly string BarelyNoSkinPath = "Terminator/Mech/CJTerminator5";
+        static readonly string NoSkinMultiplePath = "Terminator/Mech/CJTerminator6";
     }
 }
