@@ -64,16 +64,17 @@
     <Compile Include="Events\CJTerminatorMapEventHandler.cs" />
     <Compile Include="CJTerminatorMod.cs" />
     <Compile Include="Events\CJTerminatorMapEvent.cs" />
-    <Compile Include="CJTerminatorUtil.cs" />
+    <Compile Include="TerminatorUtil.cs" />
     <Compile Include="DebugActionCJTerminator.cs" />
     <Compile Include="CJTerminatorDefOf.cs" />
-    <Compile Include="Mote_TerminatorSphere.cs" />
-    <Compile Include="Mote_TerminatorLightning.cs" />
-    <Compile Include="PawnRenderNodeWorker_BionicSkin.cs" />
+    <Compile Include="Rendering\Mote_TerminatorSphere.cs" />
+    <Compile Include="Rendering\Mote_TerminatorLightning.cs" />
+    <Compile Include="Rendering\PawnRenderNodeWorker_BionicSkin.cs" />
     <Compile Include="HarmonyPatches.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SubEffecterTerminatorLightning.cs" />
     <Compile Include="SubEffecterTerminatorShpere.cs" />
+    <Compile Include="Rendering\TerminatorDraw.cs" />
     <Compile Include="TerminatorModSettings.cs" />
     <Compile Include="Verb_CastAbilityEquipWeapon.cs" />
   </ItemGroup>

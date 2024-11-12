@@ -18,6 +18,9 @@ namespace CJTerminator
             isNegativeEnabled = true;
             isPossitiveEnabled = true;
 
+
+
+
         }
 
         public override void ExposeData()
@@ -51,7 +54,6 @@ namespace CJTerminator
                 listing_Standard.Label("minFireDayPossitive".Translate(minFireDayPossitive));
                 minFireDayPossitive = (int)listing_Standard.Slider(minFireDayPossitive, 1, 1000);
             }
-
             listing_Standard.End();
             this.Write();
         }
