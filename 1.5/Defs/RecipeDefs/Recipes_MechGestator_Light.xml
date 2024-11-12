@@ -5,7 +5,7 @@
     <label>gestate terminator</label>
     <description>Gestate a t800.</description>
 	<gestationCycles>1</gestationCycles>
-	<researchPrerequisite>StandardMechtech</researchPrerequisite>
+	<researchPrerequisite>Machining</researchPrerequisite>
     <ingredients>
 		<li>
 			<filter>
@@ -13,7 +13,7 @@
 					<li>Plasteel</li>
 				</thingDefs>
 			</filter>
-			<count>85</count>
+			<count>185</count>
 		</li>
 		<li>
 			<filter>
@@ -29,7 +29,7 @@
 					<li>ComponentIndustrial</li>
 				</thingDefs>
 			</filter>
-			<count>4</count>
+			<count>8</count>
 			</li>
 			<li>
 			<filter>
