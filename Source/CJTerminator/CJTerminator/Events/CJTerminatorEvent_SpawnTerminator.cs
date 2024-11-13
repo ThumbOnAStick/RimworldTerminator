@@ -8,7 +8,7 @@ using UnityEngine;
 using Verse;
 using Verse.Sound;
 
-namespace CJTerminator
+namespace CJTerminator.Events   
 {
     public class CJTerminatorEvent_SpawnTerminator : CJTerminatorMapEvent
     {
@@ -56,7 +56,7 @@ namespace CJTerminator
             if (eventMap == null || newOverseer == null)
                 return;
             PawnKindDef localKindDef = CJTerminatorDefOf.Mech_CJTerminator;
-            if (newOverseer.mechanitor != null && newOverseer.mechanitor.TotalBandwidth - newOverseer.mechanitor.UsedBandwidth >= 3)
+            if (newOverseer.mechanitor != null && newOverseer.mechanitor.TotalBandwidth - newOverseer.mechanitor.UsedBandwidth >= .5f)
             {
                 Find.MusicManagerPlay.ForceSilenceFor(5f);
                 Faction faction = FactionUtility.DefaultFactionFrom(FactionDefOf.PlayerColony);

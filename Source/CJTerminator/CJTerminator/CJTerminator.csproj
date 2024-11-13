@@ -77,5 +77,6 @@
     <Compile Include="TerminatorModSettings.cs" />
     <Compile Include="Verb_CastAbilityEquipWeapon.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
