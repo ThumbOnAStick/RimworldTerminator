@@ -12,8 +12,8 @@ namespace CJTerminator
     {
         public CJTerminatorMapEventHandler(Map map) : base(map)
         {
-            this.AppendEvent(TerminatorUtil.SpawnTerminatorEventPossitive(map));
-            this.AppendEvent(TerminatorUtil.SpawnTerminatorEventNegative(map));
+            this.AppendEvent(CJTerminatorUtil.SpawnTerminatorEventPossitive(map));
+            this.AppendEvent(CJTerminatorUtil.SpawnTerminatorEventNegative(map));
 
         }
 

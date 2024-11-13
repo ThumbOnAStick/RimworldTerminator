@@ -43,7 +43,7 @@ namespace CJTerminator
                 return;
             }
             Pawn mechanitor = mechanitors.RandomElement();
-            eventMap.GetComponent<CJTerminatorMapEventHandler>().AppendEvent(TerminatorUtil.SpawnTerminatorEvent(eventMap, mechanitor.Position, mechanitor));
+            eventMap.GetComponent<CJTerminatorMapEventHandler>().AppendEvent(CJTerminatorUtil.SpawnTerminatorEvent(eventMap, mechanitor.Position, mechanitor));
             Letter letter = LetterMaker.MakeLetter("TerminatorPossitive.Label".Translate(), "TerminatorPossitive.Desc".Translate(), LetterDefOf.PositiveEvent);
             letter.lookTargets = new LookTargets(mechanitor);
             Find.LetterStack.ReceiveLetter(letter);

@@ -17,7 +17,7 @@ namespace CJTerminator
         [DebugAction("CJTerminator", null, false, false, false, false, 0, false, actionType = DebugActionType.ToolMapForPawns, allowedGameStates = AllowedGameStates.PlayingOnMap)]
         public static void DamageTerminatorBodyByFifty(Pawn p)
         {
-            BodyPartRecord r = TerminatorUtil.GetRecordByName(p, "MechanicalThorax");
+            BodyPartRecord r = CJTerminatorUtil.GetRecordByName(p, "MechanicalThorax");
             if (r == null)
             {
                 Log.Error("CJTerminator: MechanicalThorax is non-exist for the pawn");
@@ -31,13 +31,13 @@ namespace CJTerminator
         [DebugAction("CJTerminator", null, false, false, false, false, 0, false, actionType = DebugActionType.ToolMapForPawns, allowedGameStates = AllowedGameStates.PlayingOnMap)]
         public static void GetTerminatorBodyHealthRatio(Pawn p)
         {
-            BodyPartRecord r = TerminatorUtil.GetRecordByName(p, "MechanicalThorax");
+            BodyPartRecord r = CJTerminatorUtil.GetRecordByName(p, "MechanicalThorax");
             if (r == null)
             {
                 Log.Error("CJTerminator: MechanicalThorax is non-exist for the pawn");
                 return;
             }
-            Log.Message(TerminatorUtil.BodyPartHarmRatio(p,r));
+            Log.Message(CJTerminatorUtil.BodyPartHarmRatio(p,r));
         }
 
         [DebugAction("CJTerminator", null, false, false, false, false, 0, false, actionType = DebugActionType.ToolMapForPawns, allowedGameStates = AllowedGameStates.PlayingOnMap)]
@@ -53,13 +53,13 @@ namespace CJTerminator
         [DebugAction("CJTerminator", null, false, false, false, false, 0, false, actionType = DebugActionType.ToolMapForPawns, allowedGameStates = AllowedGameStates.PlayingOnMap)]
         public static void SpawnTerminatorProtectingPawn(Pawn p)
         {
-            Find.CurrentMap.GetComponent<CJTerminatorMapEventHandler>().AppendEvent(TerminatorUtil.SpawnTerminatorEvent(p.Map, p.Position, p));
+            Find.CurrentMap.GetComponent<CJTerminatorMapEventHandler>().AppendEvent(CJTerminatorUtil.SpawnTerminatorEvent(p.Map, p.Position, p));
         }
 
         [DebugAction("CJTerminator", null, false, false, false, false, 0, false, actionType = DebugActionType.ToolMap, allowedGameStates = AllowedGameStates.PlayingOnMap)]
         public static void SpawnTerminatorKillingColonist()
         {
-            Find.CurrentMap.GetComponent<CJTerminatorMapEventHandler>().AppendEvent(TerminatorUtil.SpawnTerminatorEventHostile(Find.CurrentMap));
+            Find.CurrentMap.GetComponent<CJTerminatorMapEventHandler>().AppendEvent(CJTerminatorUtil.SpawnTerminatorEventHostile(Find.CurrentMap));
         }
 
 
