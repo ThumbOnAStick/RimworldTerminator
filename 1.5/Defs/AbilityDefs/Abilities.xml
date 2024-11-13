@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <AbilityCategoryDef>
+    <defName>Terminator</defName>
+    <displayOrder>1000</displayOrder>
+  </AbilityCategoryDef>
+
+  <AbilityDef Name="RobotEquipWeapon">
+    <defName>RobotEquipWeapon</defName>
+    <label>equip weapon</label>
+    <description>Order a terminator to equip a weapon.</description>
+    <iconPath>Terminator/UI/CJgunswitching</iconPath>
+    <cooldownTicksRange>480</cooldownTicksRange>
+    <hostile>false</hostile>
+    <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+    <verbProperties>
+      <verbClass>CJTerminator.Verb_CastAbilityEquipWeapon</verbClass>
+      <label>equip</label>
+      <violent>false</violent>
+      <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+      <warmupTime>0.5</warmupTime>
+      <range>999</range>
+      <requireLineOfSight>false</requireLineOfSight>
+      <targetParams>
+        <canTargetLocations>true</canTargetLocations>
+        <canTargetItems>true</canTargetItems>
+        <canTargetBuildings>false</canTargetBuildings>
+        <canTargetHumans>false</canTargetHumans>
+      </targetParams>
+    </verbProperties>
+  </AbilityDef>
+
+  
+
+</Defs>

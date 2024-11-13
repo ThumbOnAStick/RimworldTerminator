@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<PawnKindDef Name="T880Base" Abstract="True">
+    <label>terminator</label>
+    <race>Human</race>
+    <xenotypeSet>
+      <xenotypeChances>
+        <CJ_T880>999</CJ_T880>
+      </xenotypeChances>
+    </xenotypeSet>
+    <useFactionXenotypes>false</useFactionXenotypes>
+    <combatPower>300</combatPower>
+    <backstoryCryptosleepCommonality>0.1</backstoryCryptosleepCommonality>
+    <isFighter>true</isFighter>
+    <chronologicalAgeRange>300~2000</chronologicalAgeRange>
+    <initialResistanceRange>10~80</initialResistanceRange>
+    <initialWillRange>5~15</initialWillRange>
+    <apparelRequired>
+      <li>Apparel_Duster</li>
+      <li>Apparel_CollarShirt</li>
+      <li>Apparel_Pants</li>
+    </apparelRequired>
+    <requiredWorkTags>
+      <li>Social</li>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <disallowedTraits>
+      <li>Brawler</li>
+	  <li>Greedy</li>
+	  <li>Wimp</li>
+    </disallowedTraits>
+  </PawnKindDef>
+  
+  <PawnKindDef ParentName="T880Base">
+    <defName>T880</defName>
+    <invNutrition>0.5</invNutrition>
+    <invFoodDef>CJ_Powercell</invFoodDef>
+    <apparelMoney>500~700</apparelMoney>
+    <techHediffsChance>0.15</techHediffsChance>
+    <techHediffsMoney>0~1800</techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <weaponMoney>600~2800</weaponMoney>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>CJTerminatorgun</li>
+      <li>ShortShots</li>
+      <li>PumpShotgun</li>
+      <li>IndustrialGunAdvanced</li>
+      <li>GunHeavy</li>
+      <li>Minigun</li>
+	  <li MayRequire="JangoDsoul.Skynet">WM-25_Gun</li>
+	  <li MayRequire="JangoDsoul.Skynet">ChargedMinigun</li>
+	  <li MayRequire="JangoDsoul.Skynet">Gun_Flamethrower</li>
+    </weaponTags>
+    <apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelRequired Inherit="False">
+      <li>Apparel_Pants</li>
+    </apparelRequired>
+     </PawnKindDef>
+	 
+	 
+	 <PawnKindDef ParentName="T880Base">
+    <defName>T880Raider</defName>
+	<defaultFactionType>CJSkynet</defaultFactionType>
+    <invNutrition>0.5</invNutrition>
+    <invFoodDef>CJ_Powercell</invFoodDef>
+    <apparelMoney>500~700</apparelMoney>
+    <techHediffsChance>0.15</techHediffsChance>
+    <techHediffsMoney>0~1800</techHediffsMoney>
+    <techHediffsTags>
+      <li>Advanced</li>
+    </techHediffsTags>
+    <weaponMoney>600~800</weaponMoney>
+    <weaponTags>
+      <li>SimpleGun</li>
+      <li>CJTerminatorgun</li>
+      <li>ShortShots</li>
+      <li>PumpShotgun</li>
+      <li>IndustrialGunAdvanced</li>
+      <li>GunHeavy</li>
+      <li>Minigun</li>
+	  <li MayRequire="JangoDsoul.Skynet">WM-25_Gun</li>
+	  <li MayRequire="JangoDsoul.Skynet">ChargedMinigun</li>
+	  <li MayRequire="JangoDsoul.Skynet">Gun_Flamethrower</li>
+    </weaponTags>
+    <apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelRequired Inherit="False">
+      <li>Apparel_Pants</li>
+    </apparelRequired>
+     </PawnKindDef>
+	 
+	 <PawnKindDef ParentName="T880Base">
+    <defName>T880Leader</defName>
+	<defaultFactionType>CJSkynet</defaultFactionType>
+    <invNutrition>0.5</invNutrition>
+    <invFoodDef>CJ_Powercell</invFoodDef>
+    <apparelMoney>500~700</apparelMoney>
+    <techHediffsChance>0.15</techHediffsChance>
+    <techHediffsMoney>0~1800</techHediffsMoney>
+    <techHediffsTags>
+      <li>Spacer</li>
+    </techHediffsTags>
+    <weaponMoney>800~1200</weaponMoney>
+    <weaponTags>
+      <li>CJTerminatorgun</li>
+      <li>IndustrialGunAdvanced</li>
+      <li>GunHeavy</li>
+      <li>Minigun</li>
+	  <li MayRequire="JangoDsoul.Skynet">WM-25_Gun</li>
+	  <li MayRequire="JangoDsoul.Skynet">ChargedMinigun</li>
+	  <li MayRequire="JangoDsoul.Skynet">Gun_Flamethrower</li>
+    </weaponTags>
+    <apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
+    <apparelTags>
+      <li>IndustrialBasic</li>
+    </apparelTags>
+    <apparelRequired Inherit="False">
+      <li>Apparel_Pants</li>
+    </apparelRequired>
+     </PawnKindDef>
+</Defs>
