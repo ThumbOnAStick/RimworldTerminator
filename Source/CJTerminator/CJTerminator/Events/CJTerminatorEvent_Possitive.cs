@@ -56,6 +56,7 @@ namespace CJTerminator.Events
         }
         public override void ExposeData()
         {
+            base.ExposeData();
             Scribe_References.Look(ref eventMap, "eventMapPossitive");
         }
 
