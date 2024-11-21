@@ -78,7 +78,7 @@
             <li>Plasteel</li>
           </thingDefs>
         </filter>
-        <count>50</count>
+        <count>100</count>
       </li>
     </ingredients>
     <fixedIngredientFilter>

@@ -9,10 +9,10 @@
     <description>An unfeeling hybrid of flesh and machine designed to infiltrate, seek and destroy. The model 800 terminators can analyze and use any firearm, withstand a lot of damage and are capable of handling complex tasks.</description>
     <statBases>
       <MoveSpeed>3.4</MoveSpeed>
-      <ArmorRating_Blunt>0.90</ArmorRating_Blunt>
-      <ArmorRating_Sharp>0.90</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.75</ArmorRating_Sharp>
       <PsychicSensitivity>0.25</PsychicSensitivity>
-      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">0.5</BandwidthCost>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>
       <MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.1</MechEnergyLossPerHP>
     </statBases>
     <tools>
@@ -70,7 +70,7 @@
         </li>
       </lifeStageAges>
       <body>Lancer</body>
-      <baseHealthScale>2</baseHealthScale>
+      <baseHealthScale>3</baseHealthScale>
       <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
       <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Generic</soundMeleeHitBuilding>
       <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
@@ -84,9 +84,19 @@
 		<li>PlantCutting</li>
 		<li>Firefighter</li>
       </mechEnabledWorkTypes>
+      <fleshType>Mechanoid</fleshType>
+      <needsRest>false</needsRest>
+      <hasGenders>false</hasGenders>
+      <foodType>None</foodType>
+      <lifeExpectancy>2500</lifeExpectancy>
+      <bloodDef>Filth_MachineBits</bloodDef>
+      <nameGenerator MayRequire="Ludeon.RimWorld.Biotech">NamerMech</nameGenerator>
+      <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+      <soundCallIntervalFriendlyFactor>2</soundCallIntervalFriendlyFactor>
+      <thinkTreeConstant MayRequire="Ludeon.RimWorld.Biotech">MechConstant</thinkTreeConstant>
     </race>
     <butcherProducts>
-      <SkynetCPUBasic>0.5</SkynetCPUBasic>
+      <SkynetCPUBasic>1</SkynetCPUBasic>
     </butcherProducts>
   </ThingDef>
 
