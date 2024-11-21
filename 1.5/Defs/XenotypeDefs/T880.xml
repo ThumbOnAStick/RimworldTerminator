@@ -147,6 +147,18 @@
 			</li> -->
 		</renderNodeProperties>
 	</GeneDef>
+	
+	<GeneDef ParentName="GeneVoiceBase">
+    <defName>VoiceT880</defName>
+    <label>t880 voice</label>
+    <description>Only the carriers servos will voice pain.</description>
+    <iconPath>UI/Icons/Genes/Terminator-icon</iconPath>
+    <displayOrderInCategory>125</displayOrderInCategory>
+    <soundCall>TerminatorCall</soundCall>
+    <soundDeath>TerminatorDeath</soundDeath>
+    <soundWounded>TerminatorHurt</soundWounded>
+
+  </GeneDef>
 
 
 </Defs>

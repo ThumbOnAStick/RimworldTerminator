@@ -57,16 +57,16 @@
         <li>
           <def>MechanoidFullyFormed</def>
           <minAge>0</minAge>
-          <soundWounded>Pawn_Mech_Fabricor_Wounded</soundWounded>
-          <soundDeath>Pawn_Mech_Fabricor_Death</soundDeath>
-          <soundCall>Pawn_Mech_Fabricor_Call</soundCall>
+          <soundWounded>TerminatorHurt</soundWounded>
+          <soundDeath>TerminatorDeath</soundDeath>
+          <soundCall>TerminatorCall</soundCall>
         </li>
         <li MayRequire="Ludeon.RimWorld.Biotech">
           <def>MechanoidFullyFormed</def>
           <minAge>100</minAge>
-          <soundWounded>Pawn_Mech_Fabricor_Wounded</soundWounded>
-          <soundDeath>Pawn_Mech_Fabricor_Death</soundDeath>
-          <soundCall>Pawn_Mech_Fabricor_Call</soundCall>
+          <soundWounded>TerminatorHurt</soundWounded>
+          <soundDeath>TerminatorDeath</soundDeath>
+          <soundCall>TerminatorCall</soundCall>
         </li>
       </lifeStageAges>
       <body>Lancer</body>

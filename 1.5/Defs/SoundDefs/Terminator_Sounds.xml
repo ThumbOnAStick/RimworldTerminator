@@ -83,6 +83,60 @@
 		  </subSounds>
 	
 	</SoundDef>
+	
+	<SoundDef>
+		<defName>TerminatorHurt</defName>
+		<context>MapOnly</context>
+		<maxVoices>24</maxVoices>
+		<subSounds>
+			<li>
+			  <grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>029974_inside-the-robot-70923-AudioTrimmer.com3</clipPath>
+				</li>
+			  </grains>      
+			  <volumeRange>25~25</volumeRange>      
+			  <sustainLoop>False</sustainLoop>
+			</li>
+		  </subSounds>
+	
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>TerminatorDeath</defName>
+		<context>MapOnly</context>
+		<maxVoices>24</maxVoices>
+		<subSounds>
+			<li>
+			  <grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>029974_inside-the-robot-70923-AudioTrimmer.com2</clipPath>
+				</li>
+			  </grains>      
+			  <volumeRange>25~25</volumeRange>      
+			  <sustainLoop>False</sustainLoop>
+			</li>
+		  </subSounds>
+	
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>TerminatorCall</defName>
+		<context>MapOnly</context>
+		<maxVoices>24</maxVoices>
+		<subSounds>
+			<li>
+			  <grains>
+				<li Class="AudioGrain_Clip">
+					<clipPath>029974_inside-the-robot-70923-AudioTrimmer.com</clipPath>
+				</li>
+			  </grains>      
+			  <volumeRange>25~25</volumeRange>      
+			  <sustainLoop>False</sustainLoop>
+			</li>
+		  </subSounds>
+	
+	</SoundDef>
 
 	<SoundDef>
 		<defName>T800Apears</defName>
