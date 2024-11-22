@@ -25,10 +25,15 @@ namespace CJTerminator
             for(int i = 0; i< events.Count; i++)
             {
                 CJTerminatorMapEvent e = events[i];
+                if(e == null)
+                {
+                    events.RemoveAt(i);
+                    return;
+                }
                 e.EventTick(ticksGame);
                 if(e.ShouldEventBeRemoved(ticksGame))
                 {
-                    events.Remove(e);
+                    events.RemoveAt(i);
                     return;
                 }
             }
@@ -38,11 +43,6 @@ namespace CJTerminator
         {
             base.ExposeData();
             Scribe_Collections.Look(ref events, "TerminatorMapEvents",LookMode.Deep);
-            //foreach (CJTerminatorMapEvent e in events)
-            //{
-            //    e.ExposeData();
-
-            //}
             for (int i = 0; i < events.Count; i++)
             {
                 CJTerminatorMapEvent e = events[i];
