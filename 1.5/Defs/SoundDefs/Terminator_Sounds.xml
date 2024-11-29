@@ -92,10 +92,10 @@
 			<li>
 			  <grains>
 				<li Class="AudioGrain_Clip">
-					<clipPath>029974_inside-the-robot-70923-AudioTrimmer.com3</clipPath>
+					<clipPath>metal-hit-22-193289</clipPath>
 				</li>
 			  </grains>      
-			  <volumeRange>25~25</volumeRange>      
+			  <volumeRange>35~35</volumeRange>      
 			  <sustainLoop>False</sustainLoop>
 			</li>
 		  </subSounds>
@@ -110,10 +110,10 @@
 			<li>
 			  <grains>
 				<li Class="AudioGrain_Clip">
-					<clipPath>029974_inside-the-robot-70923-AudioTrimmer.com2</clipPath>
+					<clipPath>mechanicalclamp-6217-AudioTrimmer.com1</clipPath>
 				</li>
 			  </grains>      
-			  <volumeRange>25~25</volumeRange>      
+			  <volumeRange>45~55</volumeRange>      
 			  <sustainLoop>False</sustainLoop>
 			</li>
 		  </subSounds>
@@ -128,10 +128,10 @@
 			<li>
 			  <grains>
 				<li Class="AudioGrain_Clip">
-					<clipPath>029974_inside-the-robot-70923-AudioTrimmer.com</clipPath>
+					<clipPath>mechanicalclamp-6217-AudioTrimmer.com</clipPath>
 				</li>
 			  </grains>      
-			  <volumeRange>25~25</volumeRange>      
+			  <volumeRange>35~35</volumeRange>      
 			  <sustainLoop>False</sustainLoop>
 			</li>
 		  </subSounds>
