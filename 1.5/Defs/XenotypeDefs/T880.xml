@@ -25,7 +25,6 @@
 			<li>AptitudeTerrible_Cooking</li>
 			<li>Aggression_DeadCalm</li>
 			<li>CJ_Endoskeleton</li>
-			<li>Robust</li>
 			<li>VoiceT880</li>
 		</genes>
 	</XenotypeDef>
@@ -78,13 +77,9 @@
 			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
 			<ArmorRating_Heat>0.50</ArmorRating_Heat>
 			<NegotiationAbility>0.20</NegotiationAbility>
-			<LeatherAmount>0</LeatherAmount>
-			<MeatAmount>0</MeatAmount>
-			<Flammability>0</Flammability>
 			<ComfyTemperatureMin>-100</ComfyTemperatureMin>
 			<ComfyTemperatureMax>250</ComfyTemperatureMax>
 			<MarketValue>15000</MarketValue>
-			<PsychicSensitivity>0</PsychicSensitivity>
 		</statOffsets>
 		<capMods>
 			<li>
@@ -124,7 +119,6 @@
 			</li>
 		</modExtensions>
 		<dislikesSunlight>false</dislikesSunlight>
-		<geneClass>Gene_Clotting</geneClass>
 		<foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
 		<statFactors>
 			<RawNutritionFactor>0.01</RawNutritionFactor>
@@ -155,7 +149,6 @@
     <description>Only the carriers servos will voice pain.</description>
     <iconPath>UI/Icons/Genes/Terminator-icon</iconPath>
     <displayOrderInCategory>125</displayOrderInCategory>
-    <soundCall>TerminatorCall</soundCall>
     <soundDeath>TerminatorDeath</soundDeath>
     <soundWounded>TerminatorHurt</soundWounded>
 
