@@ -44,6 +44,7 @@
     </techHediffsTags>
     <weaponMoney>600~2800</weaponMoney>
     <weaponTags>
+	<li Mayrequire="VanillaExpanded.VWEHW">HeavyGun</li>
       <li>SimpleGun</li>
       <li>CJTerminatorgun</li>
       <li>ShortShots</li>
@@ -78,6 +79,7 @@
     </techHediffsTags>
     <weaponMoney>600~800</weaponMoney>
     <weaponTags>
+	<li Mayrequire="VanillaExpanded.VWEHW">HeavyGun</li>
       <li>SimpleGun</li>
       <li>CJTerminatorgun</li>
       <li>ShortShots</li>
@@ -111,6 +113,7 @@
     </techHediffsTags>
     <weaponMoney>800~1200</weaponMoney>
     <weaponTags>
+	<li Mayrequire="VanillaExpanded.VWEHW">HeavyGun</li>
       <li>CJTerminatorgun</li>
       <li>IndustrialGunAdvanced</li>
       <li>GunHeavy</li>

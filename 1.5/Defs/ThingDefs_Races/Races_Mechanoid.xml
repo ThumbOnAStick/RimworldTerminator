@@ -107,6 +107,7 @@
 
   <PawnKindDef ParentName="BaseMechanoidKind">
     <defName>Mech_CJTerminator</defName>
+	<defaultFactionType>CJSkynet</defaultFactionType>
     <label>T-800</label>
     <race>Mech_CJTerminator</race>
     <combatPower>500</combatPower>
