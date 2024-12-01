@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+		
+	<HediffDef>
+		<defName>CJBlood</defName>
+		<label>circulation control</label>
+		<description>This person´s body does not need blood to survive.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<scenarioCanAdd>false</scenarioCanAdd>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<becomeVisible>false</becomeVisible>
+				<totalBleedFactor>0.1</totalBleedFactor>
+			</li>
+		</stages>
+	</HediffDef>
+		
+</Defs>

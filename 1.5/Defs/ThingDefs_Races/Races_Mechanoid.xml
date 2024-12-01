@@ -14,6 +14,11 @@
       <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>
       <MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.1</MechEnergyLossPerHP>
     </statBases>
+		<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+				<customWoundsFromFleshtype>CJ_Machineflesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
     <tools>
       <li>
         <label>left fist</label>

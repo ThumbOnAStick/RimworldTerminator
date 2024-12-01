@@ -26,6 +26,8 @@
 			<li>Aggression_DeadCalm</li>
 			<li>CJ_Endoskeleton</li>
 			<li>VoiceT880</li>
+			<li>CJBloodGene</li>
+			<li MayRequire="RedMattis.BigSmall.Core">BS_GiantWeaponWielder</li>
 		</genes>
 	</XenotypeDef>
 
@@ -63,6 +65,7 @@
 		</disablesNeeds>
 		<exclusionTags>
 			<li>Pain</li>
+			<li>BloodLoss</li>
 		</exclusionTags>
 		<statOffsets>
 			<SocialImpact>-0.3</SocialImpact>
@@ -115,7 +118,6 @@
 		<modExtensions>
 			<li Class="VanillaGenesExpanded.GeneExtension">
 			<hediffToWholeBody>NuclearPowered</hediffToWholeBody>
-				<customWoundsFromFleshtype>CJ_Machineflesh</customWoundsFromFleshtype>
 			</li>
 		</modExtensions>
 		<dislikesSunlight>false</dislikesSunlight>
@@ -125,7 +127,7 @@
 			<RestFallRateFactor>0.01</RestFallRateFactor>
 			<Fertility>0</Fertility>
 			<IncomingDamageFactor>0.35</IncomingDamageFactor>
-		</statFactors>
+			</statFactors>
 		<painFactor>0</painFactor>
 		<selectionWeight>0</selectionWeight>
 		<renderNodeProperties>
@@ -151,6 +153,21 @@
     <displayOrderInCategory>125</displayOrderInCategory>
     <soundDeath>TerminatorDeath</soundDeath>
     <soundWounded>TerminatorHurt</soundWounded>
+
+  </GeneDef>
+  
+  <GeneDef>
+    <defName>CJBloodGene</defName>
+    <label>circulation system</label>
+    <description>Carriers of this gene will bleed less.</description>
+    <iconPath>UI/Icons/Genes/Terminator-icon</iconPath>
+    <displayOrderInCategory>125</displayOrderInCategory>
+	<modExtensions>
+			<li Class="VanillaGenesExpanded.GeneExtension">
+			<hediffToWholeBody>CJBlood</hediffToWholeBody>
+				<customWoundsFromFleshtype>CJ_Machineflesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
 
   </GeneDef>
 
