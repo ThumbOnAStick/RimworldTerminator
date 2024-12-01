@@ -51,6 +51,9 @@
 			<li>
 				<def>GreatMemory</def>
 			</li>
+			<li>
+				<def>Tough</def>
+			</li>
 		</forcedTraits>
 		<disablesNeeds>
 			<li>Beauty</li>
