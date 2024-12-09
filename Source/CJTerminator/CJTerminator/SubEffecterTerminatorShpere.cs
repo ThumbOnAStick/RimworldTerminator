@@ -20,6 +20,7 @@ namespace CJTerminator
 
         public override void SubTrigger(TargetInfo A, TargetInfo B, int overrideSpawnTick = -1, bool force = false)
         {
+            CJTerminatorDefOf.T800ApearsSphere.PlayOneShotOnCamera();
             Vector3 vector = (A.HasThing && A.Thing.DrawPosHeld != null) ? A.Thing.DrawPosHeld.Value : A.Cell.ToVector3Shifted();
             Mote_TerminatorSphere terminatorSphere = (Mote_TerminatorSphere)ThingMaker.MakeThing(this.def.moteDef, null);
             terminatorSphere.exactPosition = vector;

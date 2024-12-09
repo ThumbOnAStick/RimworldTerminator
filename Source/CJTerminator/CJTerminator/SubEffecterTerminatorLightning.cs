@@ -20,11 +20,10 @@ namespace CJTerminator
         }
 
 
-
         public override void SubTrigger(TargetInfo A, TargetInfo B, int overrideSpawnTick = -1, bool force = false)
         {
             Vector3 vector = (A.HasThing && A.Thing.DrawPosHeld != null) ? A.Thing.DrawPosHeld.Value : A.Cell.ToVector3Shifted();
-            SoundDefOf.Thunder_OnMap.PlayOneShotOnCamera();
+            CJTerminatorDefOf.T800ApearsLightning.PlayOneShotOnCamera();
             Mote_TerminatorLightning terminatorLightning = (Mote_TerminatorLightning)ThingMaker.MakeThing(this.def.moteDef, null);
             terminatorLightning.exactPosition = vector + base.EffectiveOffset + Gen.RandomHorizontalVector(this.def.positionRadius);
             terminatorLightning.rotationRate = 0;

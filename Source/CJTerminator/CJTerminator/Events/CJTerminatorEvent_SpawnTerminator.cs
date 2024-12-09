@@ -12,18 +12,32 @@ namespace CJTerminator.Events
 {
     public class CJTerminatorEvent_SpawnTerminator : CJTerminatorMapEvent
     {
+        private bool fired = false;
+        private bool effectorFired = false;
+        private readonly int delay = 300;
+        private readonly int effectorDelay = 200;
+
+        private IntVec3 targetCell;
+        private Pawn newOverseer;
+
+        public CJTerminatorEvent_SpawnTerminator()
+        {
+
+        }
         public CJTerminatorEvent_SpawnTerminator(Map eventMap, IntVec3 targetCell, Pawn p) : base(eventMap)
         {
             this.targetCell = targetCell;
             this.newOverseer = p;
         }
-        public CJTerminatorEvent_SpawnTerminator()
-        {
-
-        }
         public override void EventTick(int ticksGame)
         {
-            if (ticksGame > delay + this.lastFireTick)
+            if (ticksGame > effectorDelay + this.lastFireTick && !effectorFired)
+            {
+                effectorFired = true;
+                CJTerminatorUtil.SpawnSphere(targetCell, eventMap);
+            }
+
+            if (ticksGame > effectorDelay + delay + this.lastFireTick && !fired)
             {
                 lastFireTick = ticksGame;
                 this.FireEvent();
@@ -34,18 +48,14 @@ namespace CJTerminator.Events
 
         public override void PostAppend()
         {
-            Effecter e = CJTerminatorDefOf.TerminatorApears.Spawn(targetCell, eventMap);
-            TargetInfo currentTargetInfo = new TargetInfo(targetCell, eventMap);
-            IntVec3 rndOffset = new IntVec3(new Vector2(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f)));
-            TargetInfo nextTargetInfo = new TargetInfo(targetCell + rndOffset, eventMap);
-            e.Trigger(currentTargetInfo, nextTargetInfo);
-
+            CJTerminatorUtil.SpawnLightning(targetCell, eventMap);
         }
 
         public override void ExposeData()
         {
             base.ExposeData();
             Scribe_Values.Look(ref fired, "fired");
+            Scribe_Values.Look(ref effectorFired, "effectorFired");
             Scribe_Values.Look(ref targetCell, "targetCell");
             Scribe_References.Look(ref newOverseer, "newOverseer");
 
@@ -75,10 +85,5 @@ namespace CJTerminator.Events
         }
 
 
-
-        private bool fired;
-        private readonly int delay = 250;
-        private IntVec3 targetCell;
-        private Pawn newOverseer;
     }
 }

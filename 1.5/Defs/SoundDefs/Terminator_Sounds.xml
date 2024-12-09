@@ -166,4 +166,62 @@
 			</li>
 		</subSounds>
 	</SoundDef>
+
+	<SoundDef>
+		<defName>T800ApearsLightning</defName>
+		<context>MapOnly</context>
+		<maxVoices>24</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>T-800AppearsLightning</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>225</min>
+					<max>250</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+				<onCamera>True</onCamera>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>T800ApearsSphere</defName>
+		<context>MapOnly</context>
+		<maxVoices>24</maxVoices>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>T-800AppearsSphere</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>225</min>
+					<max>250</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.9</min>
+					<max>1.1</max>
+				</pitchRange>
+				<distRange>
+					<min>0</min>
+					<max>50</max>
+				</distRange>
+				<sustainLoop>False</sustainLoop>
+				<onCamera>True</onCamera>
+			</li>
+		</subSounds>
+	</SoundDef>
 </Defs>

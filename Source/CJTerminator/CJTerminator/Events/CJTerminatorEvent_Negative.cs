@@ -44,8 +44,6 @@ namespace CJTerminator.Events
             }
             
             eventMap.GetComponent<CJTerminatorMapEventHandler>().AppendEvent(CJTerminatorUtil.SpawnTerminatorEventHostile(eventMap));
-            Letter letter = LetterMaker.MakeLetter("TerminatorNegative.Label".Translate(), "TerminatorNegative.Desc".Translate(), LetterDefOf.ThreatBig);
-            Find.LetterStack.ReceiveLetter(letter);
         }
 
         public override void PostAppend()

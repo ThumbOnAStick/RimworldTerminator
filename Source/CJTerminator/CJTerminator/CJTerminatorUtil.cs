@@ -114,6 +114,24 @@ namespace CJTerminator
         {
             return new CJTerminatorEvent_Negative(map);
         }
+
+        public static void SpawnLightning(IntVec3 targetCell, Map eventMap)
+        {
+            Effecter e = CJTerminatorDefOf.TerminatorApears.Spawn(targetCell, eventMap);
+            TargetInfo currentTargetInfo = new TargetInfo(targetCell, eventMap);
+            IntVec3 rndOffset = new IntVec3(new Vector2(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f)));
+            TargetInfo nextTargetInfo = new TargetInfo(targetCell + rndOffset, eventMap);
+            e.Trigger(currentTargetInfo, nextTargetInfo);
+        }
+
+        public static void SpawnSphere(IntVec3 targetCell, Map eventMap)
+        {
+            Effecter e = CJTerminatorDefOf.TerminatorApears2.Spawn(targetCell, eventMap);
+            TargetInfo currentTargetInfo = new TargetInfo(targetCell, eventMap);
+            IntVec3 rndOffset = new IntVec3(new Vector2(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f)));
+            TargetInfo nextTargetInfo = new TargetInfo(targetCell + rndOffset, eventMap);
+            e.Trigger(currentTargetInfo, nextTargetInfo);
+        }
         #endregion
 
         private static readonly Vector3 eyeOffset1 = new Vector3(0.11f, 0f, 0.38f);

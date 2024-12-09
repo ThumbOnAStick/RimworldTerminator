@@ -4,7 +4,7 @@
     <thingClass>CJTerminator.Mote_TerminatorLightning</thingClass>
     <mote>
       <fadeInTime>1</fadeInTime>
-      <solidTime>3</solidTime>
+      <solidTime>8</solidTime>
       <fadeOutTime>2</fadeOutTime>
     </mote>
     <altitudeLayer>Building</altitudeLayer>
@@ -18,9 +18,9 @@
     <defName>Mote_TerminatorSphere</defName>
     <thingClass>CJTerminator.Mote_TerminatorSphere</thingClass>
     <mote>
-      <fadeInTime>1</fadeInTime>
-      <solidTime>2</solidTime>
-      <fadeOutTime>1</fadeOutTime>
+      <fadeInTime>3</fadeInTime>
+      <solidTime>2.8</solidTime>
+      <fadeOutTime>2</fadeOutTime>
     </mote>
     <altitudeLayer>Building</altitudeLayer>
     <graphicData>
