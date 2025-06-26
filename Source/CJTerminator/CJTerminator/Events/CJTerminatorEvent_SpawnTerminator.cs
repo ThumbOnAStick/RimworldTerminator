@@ -8,36 +8,22 @@ using UnityEngine;
 using Verse;
 using Verse.Sound;
 
-namespace CJTerminator.Events   
+namespace CJTerminator
 {
     public class CJTerminatorEvent_SpawnTerminator : CJTerminatorMapEvent
     {
-        private bool fired = false;
-        private bool effectorFired = false;
-        private readonly int delay = 300;
-        private readonly int effectorDelay = 200;
-
-        private IntVec3 targetCell;
-        private Pawn newOverseer;
-
-        public CJTerminatorEvent_SpawnTerminator()
-        {
-
-        }
         public CJTerminatorEvent_SpawnTerminator(Map eventMap, IntVec3 targetCell, Pawn p) : base(eventMap)
         {
             this.targetCell = targetCell;
             this.newOverseer = p;
         }
+        public CJTerminatorEvent_SpawnTerminator()
+        {
+
+        }
         public override void EventTick(int ticksGame)
         {
-            if (ticksGame > effectorDelay + this.lastFireTick && !effectorFired)
-            {
-                effectorFired = true;
-                CJTerminatorUtil.SpawnSphere(targetCell, eventMap);
-            }
-
-            if (ticksGame > effectorDelay + delay + this.lastFireTick && !fired)
+            if (ticksGame > delay + this.lastFireTick)
             {
                 lastFireTick = ticksGame;
                 this.FireEvent();
@@ -48,14 +34,18 @@ namespace CJTerminator.Events
 
         public override void PostAppend()
         {
-            CJTerminatorUtil.SpawnLightning(targetCell, eventMap);
+            Effecter e = CJTerminatorDefOf.TerminatorApears.Spawn(targetCell, eventMap);
+            TargetInfo currentTargetInfo = new TargetInfo(targetCell, eventMap);
+            IntVec3 rndOffset = new IntVec3(new Vector2(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f)));
+            TargetInfo nextTargetInfo = new TargetInfo(targetCell + rndOffset, eventMap);
+            e.Trigger(currentTargetInfo, nextTargetInfo);
+
         }
 
         public override void ExposeData()
         {
             base.ExposeData();
             Scribe_Values.Look(ref fired, "fired");
-            Scribe_Values.Look(ref effectorFired, "effectorFired");
             Scribe_Values.Look(ref targetCell, "targetCell");
             Scribe_References.Look(ref newOverseer, "newOverseer");
 
@@ -66,7 +56,7 @@ namespace CJTerminator.Events
             if (eventMap == null || newOverseer == null)
                 return;
             PawnKindDef localKindDef = CJTerminatorDefOf.Mech_CJTerminator;
-            if (newOverseer.mechanitor != null && newOverseer.mechanitor.TotalBandwidth - newOverseer.mechanitor.UsedBandwidth >= .5f)
+            if (newOverseer.mechanitor != null && newOverseer.mechanitor.TotalBandwidth - newOverseer.mechanitor.UsedBandwidth >= 3)
             {
                 Find.MusicManagerPlay.ForceSilenceFor(5f);
                 Faction faction = FactionUtility.DefaultFactionFrom(FactionDefOf.PlayerColony);
@@ -85,5 +75,10 @@ namespace CJTerminator.Events
         }
 
 
+
+        private bool fired;
+        private readonly int delay = 250;
+        private IntVec3 targetCell;
+        private Pawn newOverseer;
     }
 }

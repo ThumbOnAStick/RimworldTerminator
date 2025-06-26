@@ -28,7 +28,7 @@ namespace CJTerminator
         {
             Scribe_Values.Look(ref lastFireTick, "lastFireTick");
             Scribe_References.Look(ref eventMap, "eventMap");
-            Log.Message(ToString() + lastFireTick);
+
         }
 
         protected int lastFireTick = 0;

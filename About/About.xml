@@ -6,6 +6,7 @@
   <packageId>Crackajack.Terminators</packageId>
   <supportedVersions>
     <li>1.5</li>
+	<li>1.6</li>
   </supportedVersions>
 
   <description>
@@ -74,6 +75,7 @@
   <loadAfter>
     <li>Ludeon.RimWorld</li>
     <li>Ludeon.RimWorld.Biotech</li>
+	<li>JangoDsoul.Skynet</li>
     <li>brrainz.harmony</li>
     <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
   </loadAfter>

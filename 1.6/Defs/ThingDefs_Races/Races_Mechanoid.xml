@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+  <ThingDef ParentName="BaseMechanoid">
+    <defName>Mech_CJTerminator</defName>
+    <label>T-800</label>
+    <description>An unfeeling hybrid of flesh and machine designed to infiltrate, seek and destroy. The model 800 terminators can analyze and use any firearm, withstand a lot of damage and are capable of handling complex tasks.</description>
+    <statBases>
+      <MoveSpeed>3.4</MoveSpeed>
+      <ArmorRating_Blunt>0.35</ArmorRating_Blunt>
+      <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+      <PsychicSensitivity>0.25</PsychicSensitivity>
+      <BandwidthCost MayRequire="Ludeon.Rimworld.Biotech">1</BandwidthCost>
+      <MechEnergyLossPerHP MayRequire="Ludeon.Rimworld.Biotech">0.1</MechEnergyLossPerHP>
+    </statBases>
+		<modExtensions>
+			<li Class="VEF.Genes.GeneExtension">
+				<customWoundsFromFleshtype>CJ_Machineflesh</customWoundsFromFleshtype>
+			</li>
+		</modExtensions>
+    <tools>
+      <li>
+        <label>left fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15.0</power>
+        <cooldownTime>2.3</cooldownTime>
+        <linkedBodyPartsGroup>LeftHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>right fist</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>15.0</power>
+        <cooldownTime>2.3</cooldownTime>
+        <linkedBodyPartsGroup>RightHand</linkedBodyPartsGroup>
+        <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+      </li>
+      <li>
+        <label>head</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>13.5</power>
+        <cooldownTime>2.5</cooldownTime>
+        <linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+        <ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+        <chanceFactor>0.2</chanceFactor>
+      </li>
+    </tools>
+    <race>
+      <intelligence>ToolUser</intelligence>
+      <thinkTreeMain>Mechanoid</thinkTreeMain>
+      <renderTree>CJTerminator</renderTree>
+      <baseBodySize>1.0</baseBodySize>
+      <lifeStageAges>
+        <li>
+          <def>MechanoidFullyFormed</def>
+          <minAge>0</minAge>
+          <soundWounded>TerminatorHurt</soundWounded>
+          <soundDeath>TerminatorDeath</soundDeath>
+        </li>
+        <li MayRequire="Ludeon.RimWorld.Biotech">
+          <def>MechanoidFullyFormed</def>
+          <minAge>100</minAge>
+          <soundWounded>TerminatorHurt</soundWounded>
+          <soundDeath>TerminatorDeath</soundDeath>
+        </li>
+      </lifeStageAges>
+      <body>Lancer</body>
+      <baseHealthScale>3</baseHealthScale>
+      <soundMeleeHitPawn>Pawn_Melee_Punch_HitPawn</soundMeleeHitPawn>
+      <soundMeleeHitBuilding>Pawn_Melee_Punch_HitBuilding_Generic</soundMeleeHitBuilding>
+      <soundMeleeMiss>Pawn_Melee_Punch_Miss</soundMeleeMiss>
+	  <mechEnabledWorkTypes>
+        <li>Construction</li>
+        <li>Mining</li>
+        <li>Hauling</li>
+		<li>Cleaning</li>
+		<li>Crafting</li>
+		<li>Growing</li>
+		<li>PlantCutting</li>
+		<li>Firefighter</li>
+      </mechEnabledWorkTypes>
+      <fleshType>Mechanoid</fleshType>
+      <needsRest>false</needsRest>
+      <hasGenders>false</hasGenders>
+      <foodType>None</foodType>
+      <lifeExpectancy>2500</lifeExpectancy>
+      <bloodDef>Filth_MachineBits</bloodDef>
+      <nameGenerator MayRequire="Ludeon.RimWorld.Biotech">NamerMech</nameGenerator>
+      <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+      <soundCallIntervalFriendlyFactor>12</soundCallIntervalFriendlyFactor>
+      <thinkTreeConstant MayRequire="Ludeon.RimWorld.Biotech">MechConstant</thinkTreeConstant>
+    </race>
+    <butcherProducts>
+      <ChunkSlagSteel>1</ChunkSlagSteel>
+	  <Plasteel>50</Plasteel>
+    </butcherProducts>
+  </ThingDef>
+
+  <PawnKindDef ParentName="BaseMechanoidKind">
+    <defName>Mech_CJTerminator</defName>
+    <label>T-800</label>
+    <race>Mech_CJTerminator</race>
+	<defaultFactionType>CJSkynet</defaultFactionType>
+    <combatPower>500</combatPower>
+    <lifeStages>
+      <li MayRequire="Ludeon.RimWorld.Biotech">
+        <bodyGraphicData>
+          <texPath>Terminator/Mech/CJTerminator6</texPath>
+          <shaderType>Cutout</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.9</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+      <li>
+        <bodyGraphicData>
+          <texPath>Terminator/Mech/CJTerminator6</texPath>
+          <shaderType>Cutout</shaderType>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <drawSize>1.9</drawSize>
+          <shadowData>
+            <volume>(0.6, 0.8, 0.6)</volume>
+          </shadowData>
+        </bodyGraphicData>
+      </li>
+    </lifeStages>
+    <techHediffsChance MayRequire="Ludeon.RimWorld.Biotech">1</techHediffsChance>
+    <techHediffsMoney>1000~3000</techHediffsMoney>
+    <weaponMoney>3000~5000</weaponMoney>
+    <abilities>
+      <li>RobotEquipWeapon</li>
+    </abilities>
+    <weaponTags>
+	<li Mayrequire="OskarPotocki.VanillaFactionsExpanded.Core">HeavyWeapon</li>
+      <li>SimpleGun</li>
+      <li>CJTerminatorgun</li>
+      <li>ShortShots</li>
+      <li>PumpShotgun</li>
+      <li>IndustrialGunAdvanced</li>
+      <li>GunHeavy</li>
+      <li>Minigun</li>
+	  <li MayRequire="JangoDsoul.Skynet">WM-25_Gun</li>
+	  <li MayRequire="JangoDsoul.Skynet">ChargedMinigun</li>
+	  <li MayRequire="JangoDsoul.Skynet">Gun_Flamethrower</li>
+    </weaponTags>
+  </PawnKindDef>
+
+
+</Defs>

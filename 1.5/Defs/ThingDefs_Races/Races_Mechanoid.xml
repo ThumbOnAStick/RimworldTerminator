@@ -63,14 +63,12 @@
           <minAge>0</minAge>
           <soundWounded>TerminatorHurt</soundWounded>
           <soundDeath>TerminatorDeath</soundDeath>
-          <soundCall>TerminatorCall</soundCall>
         </li>
         <li MayRequire="Ludeon.RimWorld.Biotech">
           <def>MechanoidFullyFormed</def>
           <minAge>100</minAge>
           <soundWounded>TerminatorHurt</soundWounded>
           <soundDeath>TerminatorDeath</soundDeath>
-          <soundCall>TerminatorCall</soundCall>
         </li>
       </lifeStageAges>
       <body>Lancer</body>
@@ -96,7 +94,7 @@
       <bloodDef>Filth_MachineBits</bloodDef>
       <nameGenerator MayRequire="Ludeon.RimWorld.Biotech">NamerMech</nameGenerator>
       <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
-      <soundCallIntervalFriendlyFactor>2</soundCallIntervalFriendlyFactor>
+      <soundCallIntervalFriendlyFactor>12</soundCallIntervalFriendlyFactor>
       <thinkTreeConstant MayRequire="Ludeon.RimWorld.Biotech">MechConstant</thinkTreeConstant>
     </race>
     <butcherProducts>
@@ -107,9 +105,9 @@
 
   <PawnKindDef ParentName="BaseMechanoidKind">
     <defName>Mech_CJTerminator</defName>
-	<defaultFactionType>CJSkynet</defaultFactionType>
     <label>T-800</label>
     <race>Mech_CJTerminator</race>
+	<defaultFactionType>CJSkynet</defaultFactionType>
     <combatPower>500</combatPower>
     <lifeStages>
       <li MayRequire="Ludeon.RimWorld.Biotech">
@@ -142,6 +140,7 @@
       <li>RobotEquipWeapon</li>
     </abilities>
     <weaponTags>
+	<li Mayrequire="VanillaExpanded.VWEHW">HeavyGun</li>
       <li>SimpleGun</li>
       <li>CJTerminatorgun</li>
       <li>ShortShots</li>

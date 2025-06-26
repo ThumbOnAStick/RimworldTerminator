@@ -1,0 +1,10 @@
+<Patch>
+<!-- 
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/MapGeneratorDef[@Name="MapCommonBase"]/genSteps</xpath>
+    <value>
+      <li>GenStep_AncientTerminatorJunk</li>
+    </value>
+  </Operation> -->
+
+</Patch>

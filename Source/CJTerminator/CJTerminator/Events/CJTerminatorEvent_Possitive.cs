@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace CJTerminator.Events
+namespace CJTerminator
 {
     public class CJTerminatorEvent_Possitive : CJTerminatorMapEvent
     {
@@ -37,8 +37,7 @@ namespace CJTerminator.Events
             {
                 return;
             }
-            List<Pawn> mechanitors = eventMap.mapPawns.FreeColonists.Where(p => p.mechanitor != null).
-                Where(x => x.mechanitor.TotalBandwidth - x.mechanitor.UsedBandwidth > .5f).ToList();
+            List<Pawn> mechanitors = eventMap.mapPawns.FreeColonists.Where(p => p.mechanitor != null).ToList();
             if (mechanitors.Count < 1)
             {
                 return;
@@ -56,7 +55,6 @@ namespace CJTerminator.Events
         }
         public override void ExposeData()
         {
-            base.ExposeData();
             Scribe_References.Look(ref eventMap, "eventMapPossitive");
         }
 

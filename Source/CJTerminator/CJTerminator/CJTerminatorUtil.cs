@@ -76,14 +76,6 @@ namespace CJTerminator
             {
                 path = NoSkinMultiplePath;
             }
-            else if (ratio < .6f)
-            {
-                path = BarelyNoSkinPath;
-            }
-            else if (ratio < .7f)
-            {
-                path = SkinShatteredPath;
-            }
             else if (ratio < .8f)
             {
                 path = SkinBadMultiplePath;
@@ -114,34 +106,14 @@ namespace CJTerminator
         {
             return new CJTerminatorEvent_Negative(map);
         }
-
-        public static void SpawnLightning(IntVec3 targetCell, Map eventMap)
-        {
-            Effecter e = CJTerminatorDefOf.TerminatorApears.Spawn(targetCell, eventMap);
-            TargetInfo currentTargetInfo = new TargetInfo(targetCell, eventMap);
-            IntVec3 rndOffset = new IntVec3(new Vector2(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f)));
-            TargetInfo nextTargetInfo = new TargetInfo(targetCell + rndOffset, eventMap);
-            e.Trigger(currentTargetInfo, nextTargetInfo);
-        }
-
-        public static void SpawnSphere(IntVec3 targetCell, Map eventMap)
-        {
-            Effecter e = CJTerminatorDefOf.TerminatorApears2.Spawn(targetCell, eventMap);
-            TargetInfo currentTargetInfo = new TargetInfo(targetCell, eventMap);
-            IntVec3 rndOffset = new IntVec3(new Vector2(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f)));
-            TargetInfo nextTargetInfo = new TargetInfo(targetCell + rndOffset, eventMap);
-            e.Trigger(currentTargetInfo, nextTargetInfo);
-        }
         #endregion
 
-        private static readonly Vector3 eyeOffset1 = new Vector3(0.11f, 0f, 0.38f);
-        private static readonly Vector3 eyeOffset2 = new Vector3(-0.3f, 0f, 0.45f);
+        static readonly Vector3 eyeOffset1 = new Vector3(0.18f, 0, 0.35f);
+        static readonly Vector3 eyeOffset2 = new Vector3(-0.27f, 0, 0.4f);
 
         static readonly string EyeGlowPath = "Terminator/Mech/Dot";
         static readonly string SkinGoodMultiplePath = "Terminator/Mech/CJTerminator2";
         static readonly string SkinBadMultiplePath = "Terminator/Mech/CJTerminator3";
-        static readonly string SkinShatteredPath = "Terminator/Mech/CJTerminator4";
-        static readonly string BarelyNoSkinPath = "Terminator/Mech/CJTerminator5";
-        static readonly string NoSkinMultiplePath = "Terminator/Mech/CJTerminator6";
+        static readonly string NoSkinMultiplePath = "Terminator/Mech/CJTerminator";
     }
 }
